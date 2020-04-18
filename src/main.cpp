@@ -1,19 +1,47 @@
 #include <iostream>
-#include <libavcodec/avcodec.h>
-#include <libavformat/avformat.h>
-#include <libswscale/swscale.h>
+#include <GLFW/glfw3.h>
 
 int main(int argc, const char* argv[])
 {
-    //some sample algorithm to test the program
-    for (int i = 1; i < argc; i++)
+    GLFWwindow* window;
+
+    if (!glfwInit())
     {
-        std::cout << argv[i] << " ";
-        if ( i >= argc)
+        std::cout << "couldnt intialize" << std::endl;
+        return 1;
+    }
+
+    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    if (!window)
+    {
+        std::cout << "Couldn't open the window" << std::endl;
+        return 1;
+    }
+
+    //create te a buffer for the pixels
+    unsigned char* data = new unsigned char[100 * 100 * 3];
+    for (int y = 0; y < 100; ++y)
+    {
+         for (int x = 0; x < 100; ++x)
         {
-            std::cout << " " << std::endl;
-            break;
+            data[y * 100 * 3 + x * 3    ] = 0xff;
+            data[y * 100 * 3 + x * 3 + 1] = 0x00;
+            data[y * 100 * 3 + x * 3 + 2] = 0x00;
+
         }
     }
-    std::cout << "END" << std::endl;
+
+    //run loop
+    glfwMakeContextCurrent(window);
+    while(!glfwWindowShouldClose(window))
+    {
+        //inside here you can do ur renders
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        glDrawPixels(100, 100, GL_RGB, GL_UNSIGNED_BYTE, data);
+        glfwSwapBuffers(window);
+
+        glfwWaitEvents();
+    }
+
+    return 0;
 };
