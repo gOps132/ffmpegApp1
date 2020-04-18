@@ -18,6 +18,7 @@ add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 # find_package(FFmpeg REQUIRED)
 
 add_subdirectory(lib/glfw)
+add_subdirectory(lib/FFmpeg)
 
 if (APPLE)
     list (APPEND EXTRA_LIBS
@@ -34,12 +35,4 @@ else()
 endif()
 
 #glfw libraries
-target_link_libraries(${PROJECT_NAME} glfw ${EXTRA_LIBS})
-
-#ffmpeg directories
-# include_directories(${FFMPEG_AVCODEC_INCLUDE_DIR})
-# target_link_libraries(${PROJECT_NAME} PUBLIC 
-#     ${FFMPEG_LIBAVCODECs} 
-#     ${FFMPEG_LIBAVFORMAT} 
-#     ${FFMPEG_LIBAVUTIL} 
-# )
+target_link_libraries(${PROJECT_NAME} FFmpeg glfw ${EXTRA_LIBS})
