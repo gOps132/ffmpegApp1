@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/giancedrickepilan/Documents/programmingProjects/demo apps/FFmpegApp1/build",
+  "command": "/usr/bin/clang++   -I/usr/local/include   -std=c++14 -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -o CMakeFiles/ffmpegApp1.dir/src/main.cpp.o -c \"/Users/giancedrickepilan/Documents/programmingProjects/demo apps/FFmpegApp1/src/main.cpp\"",
+  "file": "/Users/giancedrickepilan/Documents/programmingProjects/demo apps/FFmpegApp1/src/main.cpp"
+}
+]

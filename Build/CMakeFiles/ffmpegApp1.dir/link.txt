@@ -1,0 +1,1 @@
+/usr/bin/clang++   -std=c++14 -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/ffmpegApp1.dir/src/main.cpp.o  -o ffmpegApp1  /usr/local/lib/libavcodec.a /usr/local/lib/libavformat.a /usr/local/lib/libavutil.a 
