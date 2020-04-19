@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/build/lib/glfw/cmake_install.cmake")
-  include("/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/build/lib/FFmpeg/cmake_install.cmake")
+  include("/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/Build/lib/glfw/cmake_install.cmake")
+  include("/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/Build/lib/FFmpeg/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/Build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
