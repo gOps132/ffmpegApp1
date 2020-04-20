@@ -5,12 +5,6 @@
 #ifndef FFMPEGAPP1_LOAD_FRAME_H
 #define FFMPEGAPP1_LOAD_FRAME_H
 
-
-
-class load_frame {
-
-};
-
-
+bool load_frame(const char* filename, int* width, int* height, unsigned char** data);
 
 #endif //FFMPEGAPP1_LOAD_FRAME_H

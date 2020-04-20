@@ -5,8 +5,11 @@ set(CMAKE_CXX_STANDARD 14)
 #set variables and it's corresponding values
 set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14") 
-set(SOURCE_FILES  
+set(SOURCE_FILES
+
     src/main.cpp
+    src/load_frame.cpp
+        src/load_frame.h
 )
 
 #tells CmakeLists.txt where to look for cmake files
@@ -33,11 +36,9 @@ else()
         "-lGL -lGLU -lX11")
 endif()
 
-#glfw libraries
+#included libraries
 target_link_libraries(
         ${PROJECT_NAME}
-#        FFmpeg
-
         glfw
         ${FFMPEG_LIBRARIES}
         ${EXTRA_LIBS}

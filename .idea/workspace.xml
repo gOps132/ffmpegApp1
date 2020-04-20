@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="ffmpegApp1" targetName="glfw" />
       <config projectName="ffmpegApp1" targetName="uninstall" />
       <config projectName="ffmpegApp1" targetName="ffmpegApp1" />
+      <config projectName="ffmpegApp1" targetName="glfw" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -13,7 +13,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcf363d3-93b4-4c2c-bd79-c44371e630af" name="Default Changelist" comment="" />
+    <list default="true" id="bcf363d3-93b4-4c2c-bd79-c44371e630af" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/ffmpegApp1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ffmpegApp1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/load_frame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/load_frame.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/load_frame.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/load_frame.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +29,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -37,13 +43,16 @@
     <option name="directoryName" value="x8gj7psr" />
   </component>
   <component name="ProjectId" id="1amZ4fPqabedaagvsfxsaLa1es2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -54,7 +63,7 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.ffmpegApp1">
-    <configuration name="ffmpegApp1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ffmpegApp1" TARGET_NAME="ffmpegApp1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ffmpegApp1" RUN_TARGET_NAME="ffmpegApp1">
+    <configuration name="ffmpegApp1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ffmpegApp1" TARGET_NAME="ffmpegApp1" RUN_TARGET_PROJECT_NAME="ffmpegApp1" RUN_TARGET_NAME="ffmpegApp1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -85,7 +94,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587342539800</updated>
-      <workItem from="1587342543827" duration="4612000" />
+      <workItem from="1587342543827" duration="4858000" />
+      <workItem from="1587360566491" duration="6758000" />
     </task>
     <servers />
   </component>
@@ -93,25 +103,29 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="105" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587349184261">
+    <state x="105" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587363129276">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="105" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1587349184261" />
-    <state width="1218" height="184" key="GridCell.Tab.0.bottom" timestamp="1587353789397">
+    <state x="105" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1587363129276" />
+    <state width="1218" height="184" key="GridCell.Tab.0.bottom" timestamp="1587353814795">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1587353789397" />
-    <state width="1218" height="184" key="GridCell.Tab.0.center" timestamp="1587353789391">
+    <state width="1218" height="184" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1587353814795" />
+    <state width="1218" height="184" key="GridCell.Tab.0.center" timestamp="1587353814794">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1587353789391" />
-    <state width="1218" height="184" key="GridCell.Tab.0.left" timestamp="1587353789383">
+    <state width="1218" height="184" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1587353814794" />
+    <state width="1218" height="184" key="GridCell.Tab.0.left" timestamp="1587353814793">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1587353789383" />
-    <state width="1218" height="184" key="GridCell.Tab.0.right" timestamp="1587353789395">
+    <state width="1218" height="184" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1587353814793" />
+    <state width="1218" height="184" key="GridCell.Tab.0.right" timestamp="1587353814794">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1587353789395" />
+    <state width="1218" height="184" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1587353814794" />
+    <state x="320" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1587361430618">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="320" y="224" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1587361430618" />
   </component>
 </project>
