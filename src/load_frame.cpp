@@ -148,6 +148,7 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
     //allocate some data
     //making RGB data
     unsigned char* data = new unsigned char[av_frame->width * av_frame->height * 3];
+    av_frame->data;
     for (int x = 0; x < av_frame->width; ++x)
     {
         for (int y = 0; y < av_frame->height; ++y)
