@@ -19,9 +19,3 @@
 /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/Build/lib/glfw/src/CMakeFiles/rebuild_cache.dir
 /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/Build/lib/glfw/src/CMakeFiles/edit_cache.dir
 /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/Build/lib/glfw/src/CMakeFiles/glfw.dir
-/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/Build/lib/FFmpeg/CMakeFiles/install/local.dir
-/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/Build/lib/FFmpeg/CMakeFiles/install/strip.dir
-/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/Build/lib/FFmpeg/CMakeFiles/install.dir
-/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/Build/lib/FFmpeg/CMakeFiles/list_install_components.dir
-/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/Build/lib/FFmpeg/CMakeFiles/rebuild_cache.dir
-/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/Build/lib/FFmpeg/CMakeFiles/edit_cache.dir
