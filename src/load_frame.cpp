@@ -108,6 +108,8 @@ bool load_frame(const char* filename, int* width, int* height, unsigned char** d
         std::cout << "couldn't allocate AVPacket" << std::endl;
     }
 
+    int response;
+
     //weird the function says av_read_frame but it actually is reading a packet
     while (av_read_frame(av_format_ctx, av_packet) >= 0)
     {
@@ -116,7 +118,7 @@ bool load_frame(const char* filename, int* width, int* height, unsigned char** d
         {
             continue;
         }
-        int response = avcodec_send_packet(av_codec_ctx, av_packet);
+        response = avcodec_send_packet(av_codec_ctx, av_packet);
         //weird, I am just following and understanding the code but if "response" is just
 //      less than 0 why not just !response?
         if (response < 0)
@@ -132,7 +134,13 @@ bool load_frame(const char* filename, int* width, int* height, unsigned char** d
         } else
         {
             std::cout << "failed to decode packets: " << av_err2str(response) << std::endl;
+            return false;
         }
+
+        //at this point you've got raw data decoded in your AVFrame
+        //dummy statement
+
+        int j = 0;
     };
 
     //properly clean up the routine at the end, freeing up the context that is allocated

@@ -14,12 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcf363d3-93b4-4c2c-bd79-c44371e630af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ffmpegApp1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ffmpegApp1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/load_frame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/load_frame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/load_frame.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/load_frame.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587342539800</updated>
       <workItem from="1587342543827" duration="4858000" />
-      <workItem from="1587360566491" duration="6758000" />
+      <workItem from="1587360566491" duration="7049000" />
     </task>
     <servers />
   </component>
