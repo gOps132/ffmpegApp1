@@ -52,7 +52,7 @@ else()
       /sw/include
     PATH_SUFFIXES ffmpeg libav)
 
-  find_library(FFMPEG_LIBAVCODECs
+  find_library(FFMPEG_LIBAVCODEC
     NAMES avcodec
     PATHS ${_FFMPEG_AVCODEC_LIBRARY_DIRS}
       /usr/lib

@@ -1,6 +1,12 @@
 #include <iostream>
 #include <GLFW/glfw3.h>
 
+extern "C"
+{
+#include <libavcodec/avcodec.h>
+}
+
+
 int main(int argc, const char* argv[])
 {
     GLFWwindow* window;
