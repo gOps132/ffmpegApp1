@@ -149,16 +149,28 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
     //making RGB data
     unsigned char* data = new unsigned char[av_frame->width * av_frame->height * 3];
     av_frame->data;
+
+    //? converting and returning YUV to RGB
     for (int x = 0; x < av_frame->width; ++x)
     {
+//        returning RGB
+//        for (int y = 0; y < av_frame->height; ++y)
+//        {
+//            //filling in the data
+//            data[y * av_frame->width * 3 + x * 3] = 0xff;   //RED
+//            data[y * av_frame->width * 3 + x * 3 + 1] = 0x00;   //BLUE
+//            data[y * av_frame->width * 3 + x * 3 + 2] = 0x00;   //GREEN
+//            the "data" does not have any actual data, it's stil a red block but it still have the dimensions of the frame
+//        }
+
         for (int y = 0; y < av_frame->height; ++y)
         {
             //filling in the data
-            data[y * av_frame->width * 3 + x * 3] = 0xff;   //RED
-            data[y * av_frame->width * 3 + x * 3 + 1] = 0x00;   //BLUE
-            data[y * av_frame->width * 3 + x * 3 + 2] = 0x00;   //GREEN
-            
-            //the "data" does not have any actual data, it's stil a red block but it still have the dimensions of the frame
+            //returning gray scale pixel data
+            data[y * av_frame->width * 3 + x * 3    ] = av_frame->data[0][y * av_frame->linesize[0] + x];
+            data[y * av_frame->width * 3 + x * 3 + 1] = av_frame->data[0][y * av_frame->linesize[0] + x];
+            data[y * av_frame->width * 3 + x * 3 + 2] = av_frame->data[0][y * av_frame->linesize[0] + x];
+            the "data" does not have any actual data, it's stil a red block but it still have the dimensions of the frame
         }
     }
     
