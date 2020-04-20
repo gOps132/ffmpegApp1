@@ -260,6 +260,12 @@
 		<Unit filename="/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw/src/window.c">
 			<Option target="glfw"/>
 		</Unit>
+		<Unit filename="/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/src/load_frame.cpp">
+			<Option target="ffmpegApp1"/>
+		</Unit>
+		<Unit filename="/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/src/load_frame.h">
+			<Option target="ffmpegApp1"/>
+		</Unit>
 		<Unit filename="/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/src/main.cpp">
 			<Option target="ffmpegApp1"/>
 		</Unit>

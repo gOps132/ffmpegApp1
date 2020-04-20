@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ffmpegApp1.dir/src/load_frame.cpp.o"
   "CMakeFiles/ffmpegApp1.dir/src/main.cpp.o"
   "ffmpegApp1"
   "ffmpegApp1.pdb"

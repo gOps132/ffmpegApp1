@@ -75,7 +75,7 @@ int main(int argc, const char* argv[])
         // glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
         glMatrixMode(GL_PROJECTION);
         glLoadIdentity();
-        glOrtho(0, window_width, 0, window_height, -1, 1);
+        glOrtho(0, window_width, window_height, 0, -1, 1);
         glMatrixMode(GL_MODELVIEW);
 
         //Render whatever you want

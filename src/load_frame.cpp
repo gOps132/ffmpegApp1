@@ -170,7 +170,7 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
             data[y * av_frame->width * 3 + x * 3    ] = av_frame->data[0][y * av_frame->linesize[0] + x];
             data[y * av_frame->width * 3 + x * 3 + 1] = av_frame->data[0][y * av_frame->linesize[0] + x];
             data[y * av_frame->width * 3 + x * 3 + 2] = av_frame->data[0][y * av_frame->linesize[0] + x];
-            the "data" does not have any actual data, it's stil a red block but it still have the dimensions of the frame
+//            the "data" does not have any actual data, it's stil a red block but it still have the dimensions of the frame
         }
     }
     
