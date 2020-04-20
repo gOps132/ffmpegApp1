@@ -23,15 +23,10 @@ CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 //Path to a program.
 CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
 
-//Choose the type of build, options are: None Debug Release RelWithDebInfo
-// MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
-
-//Enable/Disable color output during build.
-CMAKE_COLOR_MAKEFILE:BOOL=ON
-
-//CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+//Semicolon separated list of supported configuration types, only
+// supports Debug, Release, MinSizeRel, and RelWithDebInfo, anything
+// else will be ignored.
+CMAKE_CONFIGURATION_TYPES:STRING=Debug;Release;MinSizeRel;RelWithDebInfo
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -47,9 +42,6 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
-
-//C compiler
-CMAKE_C_COMPILER:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -86,9 +78,6 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
-
-//Enable/Disable output of compile commands during generation.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
 //User executables (bin)
 CMAKE_INSTALL_BINDIR:PATH=bin
@@ -146,9 +135,6 @@ CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
-
-//Path to a program.
-CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -283,22 +269,13 @@ DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
 FFMPEG_AVCODEC_INCLUDE_DIR:PATH=/usr/local/include
 
 //Path to a library.
-FFMPEG_LIBAVCODECs:FILEPATH=/usr/local/lib/libavcodec.dylib
+FFMPEG_LIBAVCODEC:FILEPATH=/usr/local/lib/libavcodec.dylib
 
 //Path to a library.
 FFMPEG_LIBAVFORMAT:FILEPATH=/usr/local/lib/libavformat.dylib
 
 //Path to a library.
 FFMPEG_LIBAVUTIL:FILEPATH=/usr/local/lib/libavutil.dylib
-
-//Value Computed by CMake
-FFmpeg_BINARY_DIR:STATIC=/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/Build/lib/FFmpeg
-
-//The directory containing a CMake configuration file for FFmpeg.
-FFmpeg_DIR:PATH=FFmpeg_DIR-NOTFOUND
-
-//Value Computed by CMake
-FFmpeg_SOURCE_DIR:STATIC=/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/FFmpeg
 
 //Value Computed by CMake
 GLFW_BINARY_DIR:STATIC=/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/Build/lib/glfw
@@ -337,135 +314,6 @@ ffmpegApp1_SOURCE_DIR:STATIC=/Users/giancedrickepilan/Documents/programmingProje
 glfw_LIB_DEPENDS:STATIC=general;-framework Cocoa;general;-framework IOKit;general;-framework CoreFoundation;
 
 //Path to a library.
-pkgcfg_lib_AVCODEC_avcodec:FILEPATH=/usr/local/lib/libavcodec.a
-
-//Path to a library.
-pkgcfg_lib_AVCODEC_avutil:FILEPATH=/usr/local/lib/libavutil.a
-
-//Path to a library.
-pkgcfg_lib_AVCODEC_iconv:FILEPATH=/usr/lib/libiconv.dylib
-
-//Path to a library.
-pkgcfg_lib_AVCODEC_m:FILEPATH=/usr/lib/libm.dylib
-
-//Path to a library.
-pkgcfg_lib_AVCODEC_swresample:FILEPATH=/usr/local/lib/libswresample.a
-
-//Path to a library.
-pkgcfg_lib_AVCODEC_z:FILEPATH=/usr/lib/libz.dylib
-
-//Path to a library.
-pkgcfg_lib_AVDEVICE_avcodec:FILEPATH=/usr/local/lib/libavcodec.a
-
-//Path to a library.
-pkgcfg_lib_AVDEVICE_avdevice:FILEPATH=/usr/local/lib/libavdevice.a
-
-//Path to a library.
-pkgcfg_lib_AVDEVICE_avfilter:FILEPATH=/usr/local/lib/libavfilter.a
-
-//Path to a library.
-pkgcfg_lib_AVDEVICE_avformat:FILEPATH=/usr/local/lib/libavformat.a
-
-//Path to a library.
-pkgcfg_lib_AVDEVICE_avutil:FILEPATH=/usr/local/lib/libavutil.a
-
-//Path to a library.
-pkgcfg_lib_AVDEVICE_bz2:FILEPATH=/usr/lib/libbz2.dylib
-
-//Path to a library.
-pkgcfg_lib_AVDEVICE_iconv:FILEPATH=/usr/lib/libiconv.dylib
-
-//Path to a library.
-pkgcfg_lib_AVDEVICE_m:FILEPATH=/usr/lib/libm.dylib
-
-//Path to a library.
-pkgcfg_lib_AVDEVICE_swresample:FILEPATH=/usr/local/lib/libswresample.a
-
-//Path to a library.
-pkgcfg_lib_AVDEVICE_swscale:FILEPATH=/usr/local/lib/libswscale.a
-
-//Path to a library.
-pkgcfg_lib_AVDEVICE_z:FILEPATH=/usr/lib/libz.dylib
-
-//Path to a library.
-pkgcfg_lib_AVFILTER_avcodec:FILEPATH=/usr/local/lib/libavcodec.a
-
-//Path to a library.
-pkgcfg_lib_AVFILTER_avfilter:FILEPATH=/usr/local/lib/libavfilter.a
-
-//Path to a library.
-pkgcfg_lib_AVFILTER_avformat:FILEPATH=/usr/local/lib/libavformat.a
-
-//Path to a library.
-pkgcfg_lib_AVFILTER_avutil:FILEPATH=/usr/local/lib/libavutil.a
-
-//Path to a library.
-pkgcfg_lib_AVFILTER_bz2:FILEPATH=/usr/lib/libbz2.dylib
-
-//Path to a library.
-pkgcfg_lib_AVFILTER_iconv:FILEPATH=/usr/lib/libiconv.dylib
-
-//Path to a library.
-pkgcfg_lib_AVFILTER_m:FILEPATH=/usr/lib/libm.dylib
-
-//Path to a library.
-pkgcfg_lib_AVFILTER_swresample:FILEPATH=/usr/local/lib/libswresample.a
-
-//Path to a library.
-pkgcfg_lib_AVFILTER_swscale:FILEPATH=/usr/local/lib/libswscale.a
-
-//Path to a library.
-pkgcfg_lib_AVFILTER_z:FILEPATH=/usr/lib/libz.dylib
-
-//Path to a library.
-pkgcfg_lib_AVFORMAT_avcodec:FILEPATH=/usr/local/lib/libavcodec.a
-
-//Path to a library.
-pkgcfg_lib_AVFORMAT_avformat:FILEPATH=/usr/local/lib/libavformat.a
-
-//Path to a library.
-pkgcfg_lib_AVFORMAT_avutil:FILEPATH=/usr/local/lib/libavutil.a
-
-//Path to a library.
-pkgcfg_lib_AVFORMAT_bz2:FILEPATH=/usr/lib/libbz2.dylib
-
-//Path to a library.
-pkgcfg_lib_AVFORMAT_iconv:FILEPATH=/usr/lib/libiconv.dylib
-
-//Path to a library.
-pkgcfg_lib_AVFORMAT_m:FILEPATH=/usr/lib/libm.dylib
-
-//Path to a library.
-pkgcfg_lib_AVFORMAT_swresample:FILEPATH=/usr/local/lib/libswresample.a
-
-//Path to a library.
-pkgcfg_lib_AVFORMAT_z:FILEPATH=/usr/lib/libz.dylib
-
-//Path to a library.
-pkgcfg_lib_AVUTIL_avutil:FILEPATH=/usr/local/lib/libavutil.a
-
-//Path to a library.
-pkgcfg_lib_AVUTIL_m:FILEPATH=/usr/lib/libm.dylib
-
-//Path to a library.
-pkgcfg_lib_SWRESAMPLE_avutil:FILEPATH=/usr/local/lib/libavutil.a
-
-//Path to a library.
-pkgcfg_lib_SWRESAMPLE_m:FILEPATH=/usr/lib/libm.dylib
-
-//Path to a library.
-pkgcfg_lib_SWRESAMPLE_swresample:FILEPATH=/usr/local/lib/libswresample.a
-
-//Path to a library.
-pkgcfg_lib_SWSCALE_avutil:FILEPATH=/usr/local/lib/libavutil.a
-
-//Path to a library.
-pkgcfg_lib_SWSCALE_m:FILEPATH=/usr/lib/libm.dylib
-
-//Path to a library.
-pkgcfg_lib_SWSCALE_swscale:FILEPATH=/usr/local/lib/libswscale.a
-
-//Path to a library.
 pkgcfg_lib__FFMPEG_AVCODEC_avcodec:FILEPATH=/usr/local/Cellar/ffmpeg/4.2.2_2/lib/libavcodec.dylib
 
 //Path to a library.
@@ -479,181 +327,8 @@ pkgcfg_lib__FFMPEG_AVUTIL_avutil:FILEPATH=/usr/local/Cellar/ffmpeg/4.2.2_2/lib/l
 # INTERNAL cache entries
 ########################
 
-AVCODEC_CFLAGS:INTERNAL=-I/usr/local/include
-AVCODEC_CFLAGS_I:INTERNAL=
-AVCODEC_CFLAGS_OTHER:INTERNAL=
-AVCODEC_FOUND:INTERNAL=1
-AVCODEC_INCLUDEDIR:INTERNAL=/usr/local/include
-AVCODEC_INCLUDE_DIRS:INTERNAL=/usr/local/include
-AVCODEC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lavcodec;-liconv;-lm;-lz;-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-lswresample;-lm;-lavutil;-pthread;-lm;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVCODEC_LDFLAGS_OTHER:INTERNAL=-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVCODEC_LIBDIR:INTERNAL=/usr/local/lib
-AVCODEC_LIBRARIES:INTERNAL=avcodec;iconv;m;z;swresample;m;avutil;m
-AVCODEC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-AVCODEC_LIBS:INTERNAL=
-AVCODEC_LIBS_L:INTERNAL=
-AVCODEC_LIBS_OTHER:INTERNAL=
-AVCODEC_LIBS_PATHS:INTERNAL=
-AVCODEC_MODULE_NAME:INTERNAL=libavcodec
-AVCODEC_PREFIX:INTERNAL=/usr/local
-AVCODEC_STATIC_CFLAGS:INTERNAL=-I/usr/local/include
-AVCODEC_STATIC_CFLAGS_I:INTERNAL=
-AVCODEC_STATIC_CFLAGS_OTHER:INTERNAL=
-AVCODEC_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include
-AVCODEC_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lavcodec;-liconv;-lm;-lz;-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-lswresample;-lm;-lavutil;-pthread;-lm;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVCODEC_STATIC_LDFLAGS_OTHER:INTERNAL=-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVCODEC_STATIC_LIBDIR:INTERNAL=
-AVCODEC_STATIC_LIBRARIES:INTERNAL=avcodec;iconv;m;z;swresample;m;avutil;m
-AVCODEC_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-AVCODEC_STATIC_LIBS:INTERNAL=
-AVCODEC_STATIC_LIBS_L:INTERNAL=
-AVCODEC_STATIC_LIBS_OTHER:INTERNAL=
-AVCODEC_STATIC_LIBS_PATHS:INTERNAL=
-AVCODEC_VERSION:INTERNAL=58.77.101
-AVCODEC_libavcodec_INCLUDEDIR:INTERNAL=
-AVCODEC_libavcodec_LIBDIR:INTERNAL=
-AVCODEC_libavcodec_PREFIX:INTERNAL=
-AVCODEC_libavcodec_VERSION:INTERNAL=
-AVDEVICE_CFLAGS:INTERNAL=-I/usr/local/include
-AVDEVICE_CFLAGS_I:INTERNAL=
-AVDEVICE_CFLAGS_OTHER:INTERNAL=
-AVDEVICE_FOUND:INTERNAL=1
-AVDEVICE_INCLUDEDIR:INTERNAL=/usr/local/include
-AVDEVICE_INCLUDE_DIRS:INTERNAL=/usr/local/include
-AVDEVICE_LDFLAGS:INTERNAL=-L/usr/local/lib;-lavdevice;-framework;Foundation;-lm;-framework;AVFoundation;-framework;CoreVideo;-framework;CoreMedia;-pthread;-framework;CoreGraphics;-lavfilter;-framework;OpenGL;-pthread;-lm;-framework;CoreImage;-framework;AppKit;-lswscale;-lm;-lavformat;-lm;-lbz2;-lz;-Wl,-framework,CoreFoundation;-Wl,-framework,Security;-lavcodec;-liconv;-lm;-lz;-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-lswresample;-lm;-lavutil;-pthread;-lm;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVDEVICE_LDFLAGS_OTHER:INTERNAL=-framework;Foundation;-framework;AVFoundation;-framework;CoreVideo;-framework;CoreMedia;-pthread;-framework;CoreGraphics;-framework;OpenGL;-pthread;-framework;CoreImage;-framework;AppKit;-Wl,-framework,CoreFoundation;-Wl,-framework,Security;-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVDEVICE_LIBDIR:INTERNAL=/usr/local/lib
-AVDEVICE_LIBRARIES:INTERNAL=avdevice;m;avfilter;m;swscale;m;avformat;m;bz2;z;avcodec;iconv;m;z;swresample;m;avutil;m
-AVDEVICE_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-AVDEVICE_LIBS:INTERNAL=
-AVDEVICE_LIBS_L:INTERNAL=
-AVDEVICE_LIBS_OTHER:INTERNAL=
-AVDEVICE_LIBS_PATHS:INTERNAL=
-AVDEVICE_MODULE_NAME:INTERNAL=libavdevice
-AVDEVICE_PREFIX:INTERNAL=/usr/local
-AVDEVICE_STATIC_CFLAGS:INTERNAL=-I/usr/local/include
-AVDEVICE_STATIC_CFLAGS_I:INTERNAL=
-AVDEVICE_STATIC_CFLAGS_OTHER:INTERNAL=
-AVDEVICE_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include
-AVDEVICE_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lavdevice;-framework;Foundation;-lm;-framework;AVFoundation;-framework;CoreVideo;-framework;CoreMedia;-pthread;-framework;CoreGraphics;-lavfilter;-framework;OpenGL;-pthread;-lm;-framework;CoreImage;-framework;AppKit;-lswscale;-lm;-lavformat;-lm;-lbz2;-lz;-Wl,-framework,CoreFoundation;-Wl,-framework,Security;-lavcodec;-liconv;-lm;-lz;-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-lswresample;-lm;-lavutil;-pthread;-lm;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVDEVICE_STATIC_LDFLAGS_OTHER:INTERNAL=-framework;Foundation;-framework;AVFoundation;-framework;CoreVideo;-framework;CoreMedia;-pthread;-framework;CoreGraphics;-framework;OpenGL;-pthread;-framework;CoreImage;-framework;AppKit;-Wl,-framework,CoreFoundation;-Wl,-framework,Security;-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVDEVICE_STATIC_LIBDIR:INTERNAL=
-AVDEVICE_STATIC_LIBRARIES:INTERNAL=avdevice;m;avfilter;m;swscale;m;avformat;m;bz2;z;avcodec;iconv;m;z;swresample;m;avutil;m
-AVDEVICE_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-AVDEVICE_STATIC_LIBS:INTERNAL=
-AVDEVICE_STATIC_LIBS_L:INTERNAL=
-AVDEVICE_STATIC_LIBS_OTHER:INTERNAL=
-AVDEVICE_STATIC_LIBS_PATHS:INTERNAL=
-AVDEVICE_VERSION:INTERNAL=58.9.103
-AVDEVICE_libavdevice_INCLUDEDIR:INTERNAL=
-AVDEVICE_libavdevice_LIBDIR:INTERNAL=
-AVDEVICE_libavdevice_PREFIX:INTERNAL=
-AVDEVICE_libavdevice_VERSION:INTERNAL=
-AVFILTER_CFLAGS:INTERNAL=-I/usr/local/include
-AVFILTER_CFLAGS_I:INTERNAL=
-AVFILTER_CFLAGS_OTHER:INTERNAL=
-AVFILTER_FOUND:INTERNAL=1
-AVFILTER_INCLUDEDIR:INTERNAL=/usr/local/include
-AVFILTER_INCLUDE_DIRS:INTERNAL=/usr/local/include
-AVFILTER_LDFLAGS:INTERNAL=-L/usr/local/lib;-lavfilter;-framework;OpenGL;-pthread;-lm;-framework;CoreImage;-framework;AppKit;-lswscale;-lm;-lavformat;-lm;-lbz2;-lz;-Wl,-framework,CoreFoundation;-Wl,-framework,Security;-lavcodec;-liconv;-lm;-lz;-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-lswresample;-lm;-lavutil;-pthread;-lm;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVFILTER_LDFLAGS_OTHER:INTERNAL=-framework;OpenGL;-pthread;-framework;CoreImage;-framework;AppKit;-Wl,-framework,CoreFoundation;-Wl,-framework,Security;-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVFILTER_LIBDIR:INTERNAL=/usr/local/lib
-AVFILTER_LIBRARIES:INTERNAL=avfilter;m;swscale;m;avformat;m;bz2;z;avcodec;iconv;m;z;swresample;m;avutil;m
-AVFILTER_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-AVFILTER_LIBS:INTERNAL=
-AVFILTER_LIBS_L:INTERNAL=
-AVFILTER_LIBS_OTHER:INTERNAL=
-AVFILTER_LIBS_PATHS:INTERNAL=
-AVFILTER_MODULE_NAME:INTERNAL=libavfilter
-AVFILTER_PREFIX:INTERNAL=/usr/local
-AVFILTER_STATIC_CFLAGS:INTERNAL=-I/usr/local/include
-AVFILTER_STATIC_CFLAGS_I:INTERNAL=
-AVFILTER_STATIC_CFLAGS_OTHER:INTERNAL=
-AVFILTER_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include
-AVFILTER_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lavfilter;-framework;OpenGL;-pthread;-lm;-framework;CoreImage;-framework;AppKit;-lswscale;-lm;-lavformat;-lm;-lbz2;-lz;-Wl,-framework,CoreFoundation;-Wl,-framework,Security;-lavcodec;-liconv;-lm;-lz;-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-lswresample;-lm;-lavutil;-pthread;-lm;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVFILTER_STATIC_LDFLAGS_OTHER:INTERNAL=-framework;OpenGL;-pthread;-framework;CoreImage;-framework;AppKit;-Wl,-framework,CoreFoundation;-Wl,-framework,Security;-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVFILTER_STATIC_LIBDIR:INTERNAL=
-AVFILTER_STATIC_LIBRARIES:INTERNAL=avfilter;m;swscale;m;avformat;m;bz2;z;avcodec;iconv;m;z;swresample;m;avutil;m
-AVFILTER_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-AVFILTER_STATIC_LIBS:INTERNAL=
-AVFILTER_STATIC_LIBS_L:INTERNAL=
-AVFILTER_STATIC_LIBS_OTHER:INTERNAL=
-AVFILTER_STATIC_LIBS_PATHS:INTERNAL=
-AVFILTER_VERSION:INTERNAL=7.77.101
-AVFILTER_libavfilter_INCLUDEDIR:INTERNAL=
-AVFILTER_libavfilter_LIBDIR:INTERNAL=
-AVFILTER_libavfilter_PREFIX:INTERNAL=
-AVFILTER_libavfilter_VERSION:INTERNAL=
-AVFORMAT_CFLAGS:INTERNAL=-I/usr/local/include
-AVFORMAT_CFLAGS_I:INTERNAL=
-AVFORMAT_CFLAGS_OTHER:INTERNAL=
-AVFORMAT_FOUND:INTERNAL=1
-AVFORMAT_INCLUDEDIR:INTERNAL=/usr/local/include
-AVFORMAT_INCLUDE_DIRS:INTERNAL=/usr/local/include
-AVFORMAT_LDFLAGS:INTERNAL=-L/usr/local/lib;-lavformat;-lm;-lbz2;-lz;-Wl,-framework,CoreFoundation;-Wl,-framework,Security;-lavcodec;-liconv;-lm;-lz;-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-lswresample;-lm;-lavutil;-pthread;-lm;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVFORMAT_LDFLAGS_OTHER:INTERNAL=-Wl,-framework,CoreFoundation;-Wl,-framework,Security;-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVFORMAT_LIBDIR:INTERNAL=/usr/local/lib
-AVFORMAT_LIBRARIES:INTERNAL=avformat;m;bz2;z;avcodec;iconv;m;z;swresample;m;avutil;m
-AVFORMAT_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-AVFORMAT_LIBS:INTERNAL=
-AVFORMAT_LIBS_L:INTERNAL=
-AVFORMAT_LIBS_OTHER:INTERNAL=
-AVFORMAT_LIBS_PATHS:INTERNAL=
-AVFORMAT_MODULE_NAME:INTERNAL=libavformat
-AVFORMAT_PREFIX:INTERNAL=/usr/local
-AVFORMAT_STATIC_CFLAGS:INTERNAL=-I/usr/local/include
-AVFORMAT_STATIC_CFLAGS_I:INTERNAL=
-AVFORMAT_STATIC_CFLAGS_OTHER:INTERNAL=
-AVFORMAT_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include
-AVFORMAT_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lavformat;-lm;-lbz2;-lz;-Wl,-framework,CoreFoundation;-Wl,-framework,Security;-lavcodec;-liconv;-lm;-lz;-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-lswresample;-lm;-lavutil;-pthread;-lm;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVFORMAT_STATIC_LDFLAGS_OTHER:INTERNAL=-Wl,-framework,CoreFoundation;-Wl,-framework,Security;-framework;AudioToolbox;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices;-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVFORMAT_STATIC_LIBDIR:INTERNAL=
-AVFORMAT_STATIC_LIBRARIES:INTERNAL=avformat;m;bz2;z;avcodec;iconv;m;z;swresample;m;avutil;m
-AVFORMAT_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-AVFORMAT_STATIC_LIBS:INTERNAL=
-AVFORMAT_STATIC_LIBS_L:INTERNAL=
-AVFORMAT_STATIC_LIBS_OTHER:INTERNAL=
-AVFORMAT_STATIC_LIBS_PATHS:INTERNAL=
-AVFORMAT_VERSION:INTERNAL=58.42.100
-AVFORMAT_libavformat_INCLUDEDIR:INTERNAL=
-AVFORMAT_libavformat_LIBDIR:INTERNAL=
-AVFORMAT_libavformat_PREFIX:INTERNAL=
-AVFORMAT_libavformat_VERSION:INTERNAL=
-AVUTIL_CFLAGS:INTERNAL=-I/usr/local/include
-AVUTIL_CFLAGS_I:INTERNAL=
-AVUTIL_CFLAGS_OTHER:INTERNAL=
-AVUTIL_FOUND:INTERNAL=1
-AVUTIL_INCLUDEDIR:INTERNAL=/usr/local/include
-AVUTIL_INCLUDE_DIRS:INTERNAL=/usr/local/include
-AVUTIL_LDFLAGS:INTERNAL=-L/usr/local/lib;-lavutil;-pthread;-lm;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVUTIL_LDFLAGS_OTHER:INTERNAL=-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVUTIL_LIBDIR:INTERNAL=/usr/local/lib
-AVUTIL_LIBRARIES:INTERNAL=avutil;m
-AVUTIL_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-AVUTIL_LIBS:INTERNAL=
-AVUTIL_LIBS_L:INTERNAL=
-AVUTIL_LIBS_OTHER:INTERNAL=
-AVUTIL_LIBS_PATHS:INTERNAL=
-AVUTIL_MODULE_NAME:INTERNAL=libavutil
-AVUTIL_PREFIX:INTERNAL=/usr/local
-AVUTIL_STATIC_CFLAGS:INTERNAL=-I/usr/local/include
-AVUTIL_STATIC_CFLAGS_I:INTERNAL=
-AVUTIL_STATIC_CFLAGS_OTHER:INTERNAL=
-AVUTIL_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include
-AVUTIL_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lavutil;-pthread;-lm;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVUTIL_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-AVUTIL_STATIC_LIBDIR:INTERNAL=
-AVUTIL_STATIC_LIBRARIES:INTERNAL=avutil;m
-AVUTIL_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-AVUTIL_STATIC_LIBS:INTERNAL=
-AVUTIL_STATIC_LIBS_L:INTERNAL=
-AVUTIL_STATIC_LIBS_OTHER:INTERNAL=
-AVUTIL_STATIC_LIBS_PATHS:INTERNAL=
-AVUTIL_VERSION:INTERNAL=56.42.102
-AVUTIL_libavutil_INCLUDEDIR:INTERNAL=
-AVUTIL_libavutil_LIBDIR:INTERNAL=
-AVUTIL_libavutil_PREFIX:INTERNAL=
-AVUTIL_libavutil_VERSION:INTERNAL=
+//Stored Xcode object GUID
+ALL_BUILD_GUID_CMAKE:INTERNAL=C9A08BE339A94E019ACF41C0
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -666,16 +341,12 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=17
 //Patch version of cmake used to create the current loaded cache
 CMAKE_CACHE_PATCH_VERSION:INTERNAL=0
-//ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
-CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/Applications/CMake.app/Contents/bin/cmake
 //Path to cpack program executable.
 CMAKE_CPACK_COMMAND:INTERNAL=/Applications/CMake.app/Contents/bin/cpack
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/Applications/CMake.app/Contents/bin/ctest
-//ADVANCED property for variable: CMAKE_CXX_COMPILER
-CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
 CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
@@ -686,8 +357,6 @@ CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_COMPILER
-CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
 CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
@@ -700,8 +369,6 @@ CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
-//Path to cache edit program executable.
-CMAKE_EDIT_COMMAND:INTERNAL=/Applications/CMake.app/Contents/bin/ccmake
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
 CMAKE_EXE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_DEBUG
@@ -712,12 +379,10 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
-CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
-CMAKE_GENERATOR:INTERNAL=Unix Makefiles
+CMAKE_GENERATOR:INTERNAL=Xcode
 //Generator instance identifier.
 CMAKE_GENERATOR_INSTANCE:INTERNAL=
 //Name of generator platform.
@@ -767,8 +432,6 @@ CMAKE_INSTALL_SHAREDSTATEDIR-ADVANCED:INTERNAL=1
 CMAKE_INSTALL_SYSCONFDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_MAKE_PROGRAM
-CMAKE_MAKE_PROGRAM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
 CMAKE_MODULE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_DEBUG
@@ -833,80 +496,12 @@ FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/local/bin/pkg-config][v0.2
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
-SWRESAMPLE_CFLAGS:INTERNAL=-I/usr/local/include
-SWRESAMPLE_CFLAGS_I:INTERNAL=
-SWRESAMPLE_CFLAGS_OTHER:INTERNAL=
-SWRESAMPLE_FOUND:INTERNAL=1
-SWRESAMPLE_INCLUDEDIR:INTERNAL=/usr/local/include
-SWRESAMPLE_INCLUDE_DIRS:INTERNAL=/usr/local/include
-SWRESAMPLE_LDFLAGS:INTERNAL=-L/usr/local/lib;-lswresample;-lm;-lavutil;-pthread;-lm;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-SWRESAMPLE_LDFLAGS_OTHER:INTERNAL=-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-SWRESAMPLE_LIBDIR:INTERNAL=/usr/local/lib
-SWRESAMPLE_LIBRARIES:INTERNAL=swresample;m;avutil;m
-SWRESAMPLE_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-SWRESAMPLE_LIBS:INTERNAL=
-SWRESAMPLE_LIBS_L:INTERNAL=
-SWRESAMPLE_LIBS_OTHER:INTERNAL=
-SWRESAMPLE_LIBS_PATHS:INTERNAL=
-SWRESAMPLE_MODULE_NAME:INTERNAL=libswresample
-SWRESAMPLE_PREFIX:INTERNAL=/usr/local
-SWRESAMPLE_STATIC_CFLAGS:INTERNAL=-I/usr/local/include
-SWRESAMPLE_STATIC_CFLAGS_I:INTERNAL=
-SWRESAMPLE_STATIC_CFLAGS_OTHER:INTERNAL=
-SWRESAMPLE_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include
-SWRESAMPLE_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lswresample;-lm;-lavutil;-pthread;-lm;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-SWRESAMPLE_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-SWRESAMPLE_STATIC_LIBDIR:INTERNAL=
-SWRESAMPLE_STATIC_LIBRARIES:INTERNAL=swresample;m;avutil;m
-SWRESAMPLE_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-SWRESAMPLE_STATIC_LIBS:INTERNAL=
-SWRESAMPLE_STATIC_LIBS_L:INTERNAL=
-SWRESAMPLE_STATIC_LIBS_OTHER:INTERNAL=
-SWRESAMPLE_STATIC_LIBS_PATHS:INTERNAL=
-SWRESAMPLE_VERSION:INTERNAL=3.6.100
-SWRESAMPLE_libavswresample_INCLUDEDIR:INTERNAL=
-SWRESAMPLE_libavswresample_LIBDIR:INTERNAL=
-SWRESAMPLE_libavswresample_PREFIX:INTERNAL=
-SWRESAMPLE_libavswresample_VERSION:INTERNAL=
-SWRESAMPLE_libswresample_INCLUDEDIR:INTERNAL=
-SWRESAMPLE_libswresample_LIBDIR:INTERNAL=
-SWRESAMPLE_libswresample_PREFIX:INTERNAL=
-SWRESAMPLE_libswresample_VERSION:INTERNAL=
-SWSCALE_CFLAGS:INTERNAL=-I/usr/local/include
-SWSCALE_CFLAGS_I:INTERNAL=
-SWSCALE_CFLAGS_OTHER:INTERNAL=
-SWSCALE_FOUND:INTERNAL=1
-SWSCALE_INCLUDEDIR:INTERNAL=/usr/local/include
-SWSCALE_INCLUDE_DIRS:INTERNAL=/usr/local/include
-SWSCALE_LDFLAGS:INTERNAL=-L/usr/local/lib;-lswscale;-lm;-lavutil;-pthread;-lm;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-SWSCALE_LDFLAGS_OTHER:INTERNAL=-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-SWSCALE_LIBDIR:INTERNAL=/usr/local/lib
-SWSCALE_LIBRARIES:INTERNAL=swscale;m;avutil;m
-SWSCALE_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-SWSCALE_LIBS:INTERNAL=
-SWSCALE_LIBS_L:INTERNAL=
-SWSCALE_LIBS_OTHER:INTERNAL=
-SWSCALE_LIBS_PATHS:INTERNAL=
-SWSCALE_MODULE_NAME:INTERNAL=libswscale
-SWSCALE_PREFIX:INTERNAL=/usr/local
-SWSCALE_STATIC_CFLAGS:INTERNAL=-I/usr/local/include
-SWSCALE_STATIC_CFLAGS_I:INTERNAL=
-SWSCALE_STATIC_CFLAGS_OTHER:INTERNAL=
-SWSCALE_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include
-SWSCALE_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lswscale;-lm;-lavutil;-pthread;-lm;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-SWSCALE_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-framework;VideoToolbox;-framework;CoreFoundation;-framework;CoreMedia;-framework;CoreVideo;-framework;CoreServices
-SWSCALE_STATIC_LIBDIR:INTERNAL=
-SWSCALE_STATIC_LIBRARIES:INTERNAL=swscale;m;avutil;m
-SWSCALE_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-SWSCALE_STATIC_LIBS:INTERNAL=
-SWSCALE_STATIC_LIBS_L:INTERNAL=
-SWSCALE_STATIC_LIBS_OTHER:INTERNAL=
-SWSCALE_STATIC_LIBS_PATHS:INTERNAL=
-SWSCALE_VERSION:INTERNAL=5.6.101
-SWSCALE_libswscale_INCLUDEDIR:INTERNAL=
-SWSCALE_libswscale_LIBDIR:INTERNAL=
-SWSCALE_libswscale_PREFIX:INTERNAL=
-SWSCALE_libswscale_VERSION:INTERNAL=
+//Stored Xcode object GUID
+PROJECT_GLFW_GUID_CMAKE:INTERNAL=F2385645B50F49F7A46DD2DD
+//Stored Xcode object GUID
+PROJECT_ffmpegApp1_GUID_CMAKE:INTERNAL=1DCD4A75F62645E6942C3A94
+//Stored Xcode object GUID
+ZERO_CHECK_GUID_CMAKE:INTERNAL=0113BBC298D04B73939FE2C0
 _FFMPEG_AVCODEC_CFLAGS:INTERNAL=-I/usr/local/Cellar/ffmpeg/4.2.2_2/include
 _FFMPEG_AVCODEC_CFLAGS_I:INTERNAL=
 _FFMPEG_AVCODEC_CFLAGS_OTHER:INTERNAL=
@@ -1014,112 +609,18 @@ _FFMPEG_AVUTIL_libavutil_PREFIX:INTERNAL=
 _FFMPEG_AVUTIL_libavutil_VERSION:INTERNAL=
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
-__pkg_config_arguments_AVCODEC:INTERNAL=REQUIRED;IMPORTED_TARGET;libavcodec
-__pkg_config_arguments_AVDEVICE:INTERNAL=REQUIRED;IMPORTED_TARGET;libavdevice
-__pkg_config_arguments_AVFILTER:INTERNAL=REQUIRED;IMPORTED_TARGET;libavfilter
-__pkg_config_arguments_AVFORMAT:INTERNAL=REQUIRED;IMPORTED_TARGET;libavformat
-__pkg_config_arguments_AVUTIL:INTERNAL=REQUIRED;IMPORTED_TARGET;libavutil
-__pkg_config_arguments_SWRESAMPLE:INTERNAL=REQUIRED;IMPORTED_TARGET;libswresample
-__pkg_config_arguments_SWSCALE:INTERNAL=REQUIRED;IMPORTED_TARGET;libswscale
 __pkg_config_arguments__FFMPEG_AVCODEC:INTERNAL=libavcodec
 __pkg_config_arguments__FFMPEG_AVFORMAT:INTERNAL=libavformat
 __pkg_config_arguments__FFMPEG_AVUTIL:INTERNAL=libavutil
-__pkg_config_checked_AVCODEC:INTERNAL=1
-__pkg_config_checked_AVDEVICE:INTERNAL=1
-__pkg_config_checked_AVFILTER:INTERNAL=1
-__pkg_config_checked_AVFORMAT:INTERNAL=1
-__pkg_config_checked_AVUTIL:INTERNAL=1
-__pkg_config_checked_SWRESAMPLE:INTERNAL=1
-__pkg_config_checked_SWSCALE:INTERNAL=1
 __pkg_config_checked__FFMPEG_AVCODEC:INTERNAL=1
 __pkg_config_checked__FFMPEG_AVFORMAT:INTERNAL=1
 __pkg_config_checked__FFMPEG_AVUTIL:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVCODEC_avcodec
-pkgcfg_lib_AVCODEC_avcodec-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVCODEC_avutil
-pkgcfg_lib_AVCODEC_avutil-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVCODEC_iconv
-pkgcfg_lib_AVCODEC_iconv-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVCODEC_m
-pkgcfg_lib_AVCODEC_m-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVCODEC_swresample
-pkgcfg_lib_AVCODEC_swresample-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVCODEC_z
-pkgcfg_lib_AVCODEC_z-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVDEVICE_avcodec
-pkgcfg_lib_AVDEVICE_avcodec-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVDEVICE_avdevice
-pkgcfg_lib_AVDEVICE_avdevice-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVDEVICE_avfilter
-pkgcfg_lib_AVDEVICE_avfilter-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVDEVICE_avformat
-pkgcfg_lib_AVDEVICE_avformat-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVDEVICE_avutil
-pkgcfg_lib_AVDEVICE_avutil-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVDEVICE_bz2
-pkgcfg_lib_AVDEVICE_bz2-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVDEVICE_iconv
-pkgcfg_lib_AVDEVICE_iconv-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVDEVICE_m
-pkgcfg_lib_AVDEVICE_m-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVDEVICE_swresample
-pkgcfg_lib_AVDEVICE_swresample-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVDEVICE_swscale
-pkgcfg_lib_AVDEVICE_swscale-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVDEVICE_z
-pkgcfg_lib_AVDEVICE_z-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFILTER_avcodec
-pkgcfg_lib_AVFILTER_avcodec-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFILTER_avfilter
-pkgcfg_lib_AVFILTER_avfilter-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFILTER_avformat
-pkgcfg_lib_AVFILTER_avformat-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFILTER_avutil
-pkgcfg_lib_AVFILTER_avutil-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFILTER_bz2
-pkgcfg_lib_AVFILTER_bz2-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFILTER_iconv
-pkgcfg_lib_AVFILTER_iconv-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFILTER_m
-pkgcfg_lib_AVFILTER_m-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFILTER_swresample
-pkgcfg_lib_AVFILTER_swresample-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFILTER_swscale
-pkgcfg_lib_AVFILTER_swscale-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFILTER_z
-pkgcfg_lib_AVFILTER_z-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFORMAT_avcodec
-pkgcfg_lib_AVFORMAT_avcodec-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFORMAT_avformat
-pkgcfg_lib_AVFORMAT_avformat-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFORMAT_avutil
-pkgcfg_lib_AVFORMAT_avutil-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFORMAT_bz2
-pkgcfg_lib_AVFORMAT_bz2-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFORMAT_iconv
-pkgcfg_lib_AVFORMAT_iconv-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFORMAT_m
-pkgcfg_lib_AVFORMAT_m-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFORMAT_swresample
-pkgcfg_lib_AVFORMAT_swresample-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVFORMAT_z
-pkgcfg_lib_AVFORMAT_z-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVUTIL_avutil
-pkgcfg_lib_AVUTIL_avutil-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_AVUTIL_m
-pkgcfg_lib_AVUTIL_m-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_SWRESAMPLE_avutil
-pkgcfg_lib_SWRESAMPLE_avutil-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_SWRESAMPLE_m
-pkgcfg_lib_SWRESAMPLE_m-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_SWRESAMPLE_swresample
-pkgcfg_lib_SWRESAMPLE_swresample-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_SWSCALE_avutil
-pkgcfg_lib_SWSCALE_avutil-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_SWSCALE_m
-pkgcfg_lib_SWSCALE_m-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_SWSCALE_swscale
-pkgcfg_lib_SWSCALE_swscale-ADVANCED:INTERNAL=1
+//Stored Xcode object GUID
+ffmpegApp1_GUID_CMAKE:INTERNAL=9629B7B5594A412EBC99FFE5
+//Stored Xcode object GUID
+glfw_GUID_CMAKE:INTERNAL=8294BBE6644648D88E97DAE9
+//Stored Xcode object GUID
+install_GUID_CMAKE:INTERNAL=18BBA9F44421457391607D8A
 //ADVANCED property for variable: pkgcfg_lib__FFMPEG_AVCODEC_avcodec
 pkgcfg_lib__FFMPEG_AVCODEC_avcodec-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__FFMPEG_AVFORMAT_avformat
@@ -1127,4 +628,6 @@ pkgcfg_lib__FFMPEG_AVFORMAT_avformat-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__FFMPEG_AVUTIL_avutil
 pkgcfg_lib__FFMPEG_AVUTIL_avutil-ADVANCED:INTERNAL=1
 prefix_result:INTERNAL=/usr/local/Cellar/ffmpeg/4.2.2_2/lib
+//Stored Xcode object GUID
+uninstall_GUID_CMAKE:INTERNAL=73C11DEA5C1B455AA53DF1AB
 
