@@ -1,8 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1"
--- Could NOT find FFMPEG (missing: FFMPEG_LIBRARY FFMPEG_INCLUDE_DIR) 
--- Found FFMPEG or Libav: /usr/local/lib/libavcodec.dylib;/usr/local/lib/libavformat.dylib;/usr/local/lib/libavutil.dylib, /usr/local/include
--- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
--- Using Cocoa for window creation
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug
