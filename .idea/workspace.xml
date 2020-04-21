@@ -15,82 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bcf363d3-93b4-4c2c-bd79-c44371e630af" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CompilerIdC/CompilerIdC" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CompilerIdC/CompilerIdC.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CompilerIdC/XCBuildData/BuildDescriptionCacheIndex-bb4c1ac78068dacbb266d9736d0ed83c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CompilerIdC/XCBuildData/bfdaa45f5bca8752648563b85ced29c9-desc.xcbuild" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CompilerIdC/XCBuildData/bfdaa45f5bca8752648563b85ced29c9-manifest.xcbuild" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CompilerIdC/XCBuildData/build.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CompilerIdCXX/CompilerIdCXX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CompilerIdCXX/CompilerIdCXX.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CompilerIdCXX/XCBuildData/6b31f8d14ebe4b162bc1f49145ecb7a5-desc.xcbuild" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CompilerIdCXX/XCBuildData/6b31f8d14ebe4b162bc1f49145ecb7a5-manifest.xcbuild" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CompilerIdCXX/XCBuildData/BuildDescriptionCacheIndex-34cdfce67a7bfd6b165451c5fc10ccb5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.0/CompilerIdCXX/XCBuildData/build.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.makeDebug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.makeMinSizeRel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.makeRelWithDebInfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.makeRelease" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeScripts/ReRunCMake.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeScripts/XCODE_DEPEND_HELPER.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.makeDebug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.makeMinSizeRel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.makeRelWithDebInfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.makeRelease" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeScripts/install_postBuildPhase.makeDebug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeScripts/install_postBuildPhase.makeMinSizeRel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeScripts/install_postBuildPhase.makeRelWithDebInfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeScripts/install_postBuildPhase.makeRelease" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ffmpegApp1.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ffmpegApp1.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ffmpegApp1.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ffmpegApp1.xcodeproj/project.xcworkspace/xcuserdata/giancedrickepilan.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ffmpegApp1.xcodeproj/project.xcworkspace/xcuserdata/giancedrickepilan.xcuserdatad/WorkspaceSettings.xcsettings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ffmpegApp1.xcodeproj/xcuserdata/giancedrickepilan.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets-debug.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets-minsizerel.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets-release.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets-relwithdebinfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeFiles/Export/lib/cmake/glfw3/glfw3Targets.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.makeDebug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.makeMinSizeRel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.makeRelWithDebInfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.makeRelease" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/ReRunCMake.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/XCODE_DEPEND_HELPER.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.makeDebug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.makeMinSizeRel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.makeRelWithDebInfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.makeRelease" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/install_postBuildPhase.makeDebug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/install_postBuildPhase.makeMinSizeRel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/install_postBuildPhase.makeRelWithDebInfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/install_postBuildPhase.makeRelease" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/uninstall_cmakeRulesBuildPhase.makeDebug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/uninstall_cmakeRulesBuildPhase.makeMinSizeRel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/uninstall_cmakeRulesBuildPhase.makeRelWithDebInfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/CMakeScripts/uninstall_cmakeRulesBuildPhase.makeRelease" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/GLFW.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/GLFW.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/cmake_uninstall.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/src/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/src/glfw3.pc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/src/glfw3Config.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/src/glfw3ConfigVersion.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/glfw/src/glfw_config.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake/FindFFmpeg.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/FindFFmpeg.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +113,7 @@
       <updated>1587342539800</updated>
       <workItem from="1587342543827" duration="4858000" />
       <workItem from="1587360566491" duration="9831000" />
-      <workItem from="1587466791812" duration="2010000" />
+      <workItem from="1587466791812" duration="2193000" />
     </task>
     <servers />
   </component>
