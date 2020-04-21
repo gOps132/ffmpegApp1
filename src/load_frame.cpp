@@ -218,6 +218,7 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
 
 
     //properly clean up the routine at the end, freeing up the context that is allocated
+    sws_freeContext(sws_scaler_ctx);
     av_frame_free(&av_frame);
     av_packet_free(&av_packet);
     avformat_close_input(&av_format_ctx); //closing the input file so the file does not remain open
