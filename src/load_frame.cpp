@@ -21,9 +21,15 @@ extern "C"
 
 bool load_frame(const char* filename, int* width_out, int* height_out, unsigned char** data_out)
 {
+//   refractoring the declarations here
+    AVFormatContext* av_format_ctx;
+    AVCodecContext* av_codec_ctx;
+    AVFrame* av_frame;
+    AVPacket* av_packet;
+    SwsContext* sws_scaler_ctx;
 
 //    open a file using libavformat
-    AVFormatContext* av_format_ctx = avformat_alloc_context();
+    av_format_ctx = avformat_alloc_context();
     if (!av_format_ctx) {
         std::cout << "couldn't create avformat ctx" << std::endl;
         return false;
@@ -86,7 +92,7 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
 //    }
 
     //setup codec context fro the decoder
-    AVCodecContext* av_codec_ctx = avcodec_alloc_context3(av_codec);
+    av_codec_ctx = avcodec_alloc_context3(av_codec);
     if (!av_codec_ctx)
     {
         std::cout << "Couldn't create avcodec context" << std::endl;
@@ -106,12 +112,12 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
         return false;
     }
     //create a packet
-    AVFrame* av_frame = av_frame_alloc();
+    av_frame = av_frame_alloc();
     if (!av_frame)
     {
         std::cout << "couldn't allocate AVFrame" << std::endl;
     }
-    AVPacket* av_packet = av_packet_alloc();
+    av_packet = av_packet_alloc();
     if (!av_packet)
     {
         std::cout << "couldn't allocate AVPacket" << std::endl;
@@ -191,7 +197,7 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
 
 //create a swscalar context, which is all the data that the data that the scalar needs to be converting color spaces
 //    or converting sizes  of the image
-    SwsContext* sws_scaler_ctx = sws_getContext(
+    sws_scaler_ctx = sws_getContext(
             av_frame->width,
             av_frame->height,
             av_codec_ctx->pix_fmt,

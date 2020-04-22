@@ -12,6 +12,9 @@ set(SOURCE_FILES
         src/load_frame.h
 )
 
+#ignore opengl deprecation warnings
+add_definitions(-DGL_SILENCE_DEPRECATION)
+
 #tells CmakeLists.txt where to look for cmake files
 #list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
 
