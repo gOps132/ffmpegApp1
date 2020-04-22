@@ -1,0 +1,1029 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		C32020E4701E45A3AE4CF3DB /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7B776C1B68DB4EEAA158878D /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				B10FFF5A250B4926B4152816 /* CMake Rules */,
+			);
+			dependencies = (
+				FD89671578D349168213CDB6 /* PBXTargetDependency */,
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+		EC1BB36BB0794E43A14F300A /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 722756B0AA4F4CCEBC78C90B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				75E6D5ED965944289B836CCD /* CMake Rules */,
+			);
+			dependencies = (
+				72CCFDD855DB47C1A3F1203E /* PBXTargetDependency */,
+				A40DF05BAFA94DA1A2C2FF7E /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		F5EC5CFB6E1A4962A58039FE /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 015811866C504A959CB6B40A /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				22CEC43C00344BBFB21B7032 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				D1DC89503AA94AB4B23E2752 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		FA14CAD6E5BC4355BDD3EBF3 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0109A05FDA294B61A40D2FDF /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				06B9FCB38E294DE19D207802 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		05F5F1BD9575469996BC50C3 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/osmesa_context.c */ = {isa = PBXBuildFile; fileRef = 904F42EC766F46C686AED24D /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/osmesa_context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		0860A2BC0C184F50B4D4F4CE /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = 47E1968647F44925AADFCDD7 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/include/GLFW/glfw3.h */; };
+		13533D17C5C24F3088670BEA /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = B74140F472B642049A905BC7 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_monitor.m */; };
+		494BF970DD50468082B5F893 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/egl_context.h */ = {isa = PBXBuildFile; fileRef = 47F054B56936463B86325E99 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/egl_context.h */; };
+		60A8865C2E66466C850A4CA1 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/input.c */ = {isa = PBXBuildFile; fileRef = BD553F4782654A13AD0F06D1 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/input.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		610825B7848D4210A0A50AE8 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/egl_context.c */ = {isa = PBXBuildFile; fileRef = B678C89B71E141A9886BEB9D /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/egl_context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		6605BCB8FC354718BA7C5206 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = 1B0CA0939A3842B59E835296 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/vulkan.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		6C7970283861479EBF7CD7BC /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/monitor.c */ = {isa = PBXBuildFile; fileRef = C1A284A1B7BC4B6B821FBF56 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/monitor.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		6FC14FED9154416EBE76714A /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 9944E1E2153C4BF18BD634EE /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/src/glfw_config.h */; };
+		733848A23B6E4404A7DAEA48 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/window.c */ = {isa = PBXBuildFile; fileRef = D41ECB1079A949D18A5F6CFA /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/window.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		74928982A346449385EC2CA0 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/init.c */ = {isa = PBXBuildFile; fileRef = F800F14D2C3145479FE2681A /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/init.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		82CC1969CA9F4A06B14E7019 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 070F81AD6F114E2893375297 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/CMakeLists.txt */; };
+		8353FEEE22CC4896802678C2 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = BD6B11446E8C467A99ED652C /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/nsgl_context.m */; };
+		875E59AAD2514DE5A25CDCAA /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/mappings.h */ = {isa = PBXBuildFile; fileRef = B22CDFF9563B4E54A54D9E95 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/mappings.h */; };
+		87FF87009DBF439EB19CB0ED /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/osmesa_context.h */ = {isa = PBXBuildFile; fileRef = 0DDBD84E02F442809F4E1E53 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/osmesa_context.h */; };
+		8FF14908897A4323B9DBE725 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/internal.h */ = {isa = PBXBuildFile; fileRef = 4451B70DDC7F4D9585AA028C /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/internal.h */; };
+		930E82E359B44A59AF01C22C /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = 2A3C4CA8D91F4E8A9E0150E5 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_joystick.m */; };
+		9CAB7B1274384F27B8A28B1C /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = B0B542DA3F1643C9AA986B8C /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/nsgl_context.h */; };
+		A6DD3E76C5D84E7188D8242F /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 0FF67BD9B9324D20A19CA9B3 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/include/GLFW/glfw3native.h */; };
+		AD70AA365FE74462A358CCB8 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = 6C0E119591AE42D09DD09287 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_init.m */; };
+		AF713CCC29EB45DFBAA720D8 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/context.c */ = {isa = PBXBuildFile; fileRef = 85CE7DB8EA7B49A3949E45A0 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		BEA611BB68A7441791F8F604 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/posix_thread.h */ = {isa = PBXBuildFile; fileRef = 644D894A540F403F8B001B78 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/posix_thread.h */; };
+		D7625A90B5374366A191BF03 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = D6A8C1A66222406289A9F16B /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_window.m */; };
+		ECAA485A1B5D4BD683227A2F /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = 64542D79543D441ABF14EF89 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_joystick.h */; };
+		EE8B5F6D61C74B3EA27FD7DC /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = E83886A2C0294BEFB46ED912 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_platform.h */; };
+		EFE7E04F9F0741719469E2AD /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = D9FB0F887CB846ECA04973C9 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_time.c */; };
+		FB9B12FA539146428C306E52 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/posix_thread.c */ = {isa = PBXBuildFile; fileRef = 0B16D1E2F79F47378FA550CE /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/posix_thread.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		29C5D4077D9E4EA4AF61FDDF /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		302D54551BD64FC38349BEE4 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		82A606B4A8FC4CE886ED9675 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		C2BC1F66464C4DDD9AF0980A /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		54A109FCA78E47EEA2B6BC0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3F5F60228A41FA82291495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA14CAD6E5BC4355BDD3EBF3;
+			remoteInfo = ZERO_CHECK;
+		};
+		778CFA917B5744E8974B3157 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3F5F60228A41FA82291495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC1BB36BB0794E43A14F300A;
+			remoteInfo = ALL_BUILD;
+		};
+		91FA00B2FA4B466AA729FFC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3F5F60228A41FA82291495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA14CAD6E5BC4355BDD3EBF3;
+			remoteInfo = ZERO_CHECK;
+		};
+		9E9DAAC75E8B498682442B80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3F5F60228A41FA82291495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA32922338894A36904C14E0;
+			remoteInfo = glfw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		070F81AD6F114E2893375297 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0B16D1E2F79F47378FA550CE /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/posix_thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_thread.c; path = src/posix_thread.c; sourceTree = SOURCE_ROOT; };
+		0DDBD84E02F442809F4E1E53 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/osmesa_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osmesa_context.h; path = src/osmesa_context.h; sourceTree = SOURCE_ROOT; };
+		0FF67BD9B9324D20A19CA9B3 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		1B0CA0939A3842B59E835296 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = src/vulkan.c; sourceTree = SOURCE_ROOT; };
+		2A3C4CA8D91F4E8A9E0150E5 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = src/cocoa_joystick.m; sourceTree = SOURCE_ROOT; };
+		4451B70DDC7F4D9585AA028C /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = src/internal.h; sourceTree = SOURCE_ROOT; };
+		47E1968647F44925AADFCDD7 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		47F054B56936463B86325E99 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/egl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = egl_context.h; path = src/egl_context.h; sourceTree = SOURCE_ROOT; };
+		644D894A540F403F8B001B78 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/posix_thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_thread.h; path = src/posix_thread.h; sourceTree = SOURCE_ROOT; };
+		64542D79543D441ABF14EF89 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = src/cocoa_joystick.h; sourceTree = SOURCE_ROOT; };
+		6C0E119591AE42D09DD09287 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		85CE7DB8EA7B49A3949E45A0 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = src/context.c; sourceTree = SOURCE_ROOT; };
+		88642D0A1B0B4C088E916E24 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		904F42EC766F46C686AED24D /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/osmesa_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = osmesa_context.c; path = src/osmesa_context.c; sourceTree = SOURCE_ROOT; };
+		9944E1E2153C4BF18BD634EE /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "../../cmake-build-debug/lib/glfw2/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
+		B0B542DA3F1643C9AA986B8C /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+		B22CDFF9563B4E54A54D9E95 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/mappings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mappings.h; path = src/mappings.h; sourceTree = SOURCE_ROOT; };
+		B678C89B71E141A9886BEB9D /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/egl_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = egl_context.c; path = src/egl_context.c; sourceTree = SOURCE_ROOT; };
+		B74140F472B642049A905BC7 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		BD553F4782654A13AD0F06D1 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = src/input.c; sourceTree = SOURCE_ROOT; };
+		BD6B11446E8C467A99ED652C /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		C1A284A1B7BC4B6B821FBF56 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = src/monitor.c; sourceTree = SOURCE_ROOT; };
+		C82566FE7C304A7B88D553B0 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D41ECB1079A949D18A5F6CFA /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = src/window.c; sourceTree = SOURCE_ROOT; };
+		D6A8C1A66222406289A9F16B /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		D9FB0F887CB846ECA04973C9 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = src/cocoa_time.c; sourceTree = SOURCE_ROOT; };
+		DB6F53EDE20B4483A3B504AB /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E83886A2C0294BEFB46ED912 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		F800F14D2C3145479FE2681A /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = src/init.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		30634310A05040418CEE02A3 /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				6A4586B2EFBA455C8419E934 /* CMake Rules */,
+				88642D0A1B0B4C088E916E24 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		40C2525CA75D4424BD605801 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				9944E1E2153C4BF18BD634EE /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/src/glfw_config.h */,
+				47E1968647F44925AADFCDD7 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/include/GLFW/glfw3.h */,
+				0FF67BD9B9324D20A19CA9B3 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/include/GLFW/glfw3native.h */,
+				64542D79543D441ABF14EF89 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_joystick.h */,
+				E83886A2C0294BEFB46ED912 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_platform.h */,
+				47F054B56936463B86325E99 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/egl_context.h */,
+				4451B70DDC7F4D9585AA028C /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/internal.h */,
+				B22CDFF9563B4E54A54D9E95 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/mappings.h */,
+				B0B542DA3F1643C9AA986B8C /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/nsgl_context.h */,
+				0DDBD84E02F442809F4E1E53 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/osmesa_context.h */,
+				644D894A540F403F8B001B78 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/posix_thread.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		51B8534976FC494D8F8D9DEF /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6A4586B2EFBA455C8419E934 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6D664F695A7348C184E00BCD /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				51B8534976FC494D8F8D9DEF /* CMake Rules */,
+				C82566FE7C304A7B88D553B0 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		87BB86489EFF45D0A59DF4C1 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C0E119591AE42D09DD09287 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_init.m */,
+				2A3C4CA8D91F4E8A9E0150E5 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_joystick.m */,
+				B74140F472B642049A905BC7 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_monitor.m */,
+				D9FB0F887CB846ECA04973C9 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_time.c */,
+				D6A8C1A66222406289A9F16B /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_window.m */,
+				85CE7DB8EA7B49A3949E45A0 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/context.c */,
+				B678C89B71E141A9886BEB9D /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/egl_context.c */,
+				F800F14D2C3145479FE2681A /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/init.c */,
+				BD553F4782654A13AD0F06D1 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/input.c */,
+				C1A284A1B7BC4B6B821FBF56 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/monitor.c */,
+				BD6B11446E8C467A99ED652C /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/nsgl_context.m */,
+				904F42EC766F46C686AED24D /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/osmesa_context.c */,
+				0B16D1E2F79F47378FA550CE /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/posix_thread.c */,
+				1B0CA0939A3842B59E835296 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/vulkan.c */,
+				D41ECB1079A949D18A5F6CFA /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A96697686F90466D862A15A4 = {
+			isa = PBXGroup;
+			children = (
+				D797636DFE0E4F9E821618E2 /* GLFW3 */,
+				6D664F695A7348C184E00BCD /* ALL_BUILD */,
+				F463A7172A6644C8A6D0610F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C82E301EAE3941F6B1B1C94B /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				40C2525CA75D4424BD605801 /* Header Files */,
+				87BB86489EFF45D0A59DF4C1 /* Source Files */,
+				070F81AD6F114E2893375297 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		D797636DFE0E4F9E821618E2 /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				30634310A05040418CEE02A3 /* uninstall */,
+				C82E301EAE3941F6B1B1C94B /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		F463A7172A6644C8A6D0610F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F53EDE20B4483A3B504AB /* glfw */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA32922338894A36904C14E0 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B75F1822419453194E213F5 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				0878816673BB469FBE2EE6C1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = DB6F53EDE20B4483A3B504AB /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A3F5F60228A41FA82291495 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = 33CE789AED5F46A7BB970717 /* Build configuration list for PBXProject "GLFW" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				302D54551BD64FC38349BEE4 /* Debug */,
+				82A606B4A8FC4CE886ED9675 /* Release */,
+				29C5D4077D9E4EA4AF61FDDF /* MinSizeRel */,
+				C2BC1F66464C4DDD9AF0980A /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = A96697686F90466D862A15A4;
+			projectDirPath = ../../../lib/glfw2;
+			projectRoot = "";
+			targets = (
+				EC1BB36BB0794E43A14F300A /* ALL_BUILD */,
+				FA14CAD6E5BC4355BDD3EBF3 /* ZERO_CHECK */,
+				EA32922338894A36904C14E0 /* glfw */,
+				F5EC5CFB6E1A4962A58039FE /* install */,
+				C32020E4701E45A3AE4CF3DB /* uninstall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06B9FCB38E294DE19D207802 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/giancedrickepilan/Documents/programmingProjects/real\\ projects/ffmpegApp1/cmake-build-debug/lib/glfw2 -f /Users/giancedrickepilan/Documents/programmingProjects/real\\ projects/ffmpegApp1/cmake-build-debug/lib/glfw2/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		22CEC43C00344BBFB21B7032 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/giancedrickepilan/Documents/programmingProjects/real\\ projects/ffmpegApp1/cmake-build-debug/lib/glfw2 -f /Users/giancedrickepilan/Documents/programmingProjects/real\\ projects/ffmpegApp1/cmake-build-debug/lib/glfw2/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		36F956D0B5C74CEDA0674A60 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3A089C4670D94320AD2FA1FE = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		75E6D5ED965944289B836CCD /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/giancedrickepilan/Documents/programmingProjects/real\\ projects/ffmpegApp1/cmake-build-debug/lib/glfw2 -f /Users/giancedrickepilan/Documents/programmingProjects/real\\ projects/ffmpegApp1/cmake-build-debug/lib/glfw2/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		802727081FD74B9CA72B2202 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B10FFF5A250B4926B4152816 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/giancedrickepilan/Documents/programmingProjects/real\\ projects/ffmpegApp1/cmake-build-debug/lib/glfw2 -f /Users/giancedrickepilan/Documents/programmingProjects/real\\ projects/ffmpegApp1/cmake-build-debug/lib/glfw2/CMakeScripts/uninstall_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		D383C07A88884631AAE35C62 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0878816673BB469FBE2EE6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD70AA365FE74462A358CCB8 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_init.m */,
+				930E82E359B44A59AF01C22C /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_joystick.m */,
+				13533D17C5C24F3088670BEA /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_monitor.m */,
+				EFE7E04F9F0741719469E2AD /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_time.c */,
+				D7625A90B5374366A191BF03 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/cocoa_window.m */,
+				AF713CCC29EB45DFBAA720D8 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/context.c */,
+				610825B7848D4210A0A50AE8 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/egl_context.c */,
+				74928982A346449385EC2CA0 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/init.c */,
+				60A8865C2E66466C850A4CA1 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/input.c */,
+				6C7970283861479EBF7CD7BC /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/monitor.c */,
+				8353FEEE22CC4896802678C2 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/nsgl_context.m */,
+				05F5F1BD9575469996BC50C3 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/osmesa_context.c */,
+				FB9B12FA539146428C306E52 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/posix_thread.c */,
+				6605BCB8FC354718BA7C5206 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/vulkan.c */,
+				733848A23B6E4404A7DAEA48 /* /Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72CCFDD855DB47C1A3F1203E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA32922338894A36904C14E0 /* glfw */;
+			targetProxy = 9E9DAAC75E8B498682442B80 /* PBXContainerItemProxy */;
+		};
+		A40DF05BAFA94DA1A2C2FF7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA14CAD6E5BC4355BDD3EBF3 /* ZERO_CHECK */;
+			targetProxy = 91FA00B2FA4B466AA729FFC1 /* PBXContainerItemProxy */;
+		};
+		D1DC89503AA94AB4B23E2752 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC1BB36BB0794E43A14F300A /* ALL_BUILD */;
+			targetProxy = 778CFA917B5744E8974B3157 /* PBXContainerItemProxy */;
+		};
+		FD89671578D349168213CDB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA14CAD6E5BC4355BDD3EBF3 /* ZERO_CHECK */;
+			targetProxy = 54A109FCA78E47EEA2B6BC0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0025413B9E70406095196203 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		18738C1759794C4582556422 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1C648FE7A7654F11BD37E03D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		2FCA7B15283E469D83B9BC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		371302AF51FA46A586901A77 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/build";
+			};
+			name = RelWithDebInfo;
+		};
+		3ABDDA3E86FC45209B274ECB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		40D817D3F3F1460BA92FB591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4339E63C872245C380354056 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		463436505BE94712BA0CFD53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		49B8589BB2594F068A6E3AEE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4F537F762B1241B487ACB8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		5A80FDE9C1874498A83C7963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		5F4650A14C5045739D6CEEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/build";
+			};
+			name = Release;
+		};
+		772EC3080C424C86A02DFEB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/include\"","\"/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src\"","\"/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/src\"");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		9411BC5C5E5C47A386075B39 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		98A7F21B9B0D4DE392D67B34 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/include\"","\"/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src\"","\"/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/src\"");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BA14511D12A743B2A350C83A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/build";
+			};
+			name = MinSizeRel;
+		};
+		C070D477F74D4816BD05F9F7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C44ABFD409E744D1AAF416C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/include\"","\"/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src\"","\"/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/src\"");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "   -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		CCD0BD4798A4469C87003B4D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/include\"","\"/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/src\"","\"/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/src\"");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CCECFA59A3484CE99B2785FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/build";
+			};
+			name = Debug;
+		};
+		D701216A291B479780985897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F8A980F3466F439F9C6E96E0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FB2F6FEBB5684433A89F31B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0109A05FDA294B61A40D2FDF /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB2F6FEBB5684433A89F31B8 /* Debug */,
+				463436505BE94712BA0CFD53 /* Release */,
+				0025413B9E70406095196203 /* MinSizeRel */,
+				49B8589BB2594F068A6E3AEE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		015811866C504A959CB6B40A /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A80FDE9C1874498A83C7963 /* Debug */,
+				2FCA7B15283E469D83B9BC0A /* Release */,
+				9411BC5C5E5C47A386075B39 /* MinSizeRel */,
+				C070D477F74D4816BD05F9F7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		33CE789AED5F46A7BB970717 /* Build configuration list for PBXProject "GLFW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCECFA59A3484CE99B2785FC /* Debug */,
+				5F4650A14C5045739D6CEEC1 /* Release */,
+				BA14511D12A743B2A350C83A /* MinSizeRel */,
+				371302AF51FA46A586901A77 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		722756B0AA4F4CCEBC78C90B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C648FE7A7654F11BD37E03D /* Debug */,
+				D701216A291B479780985897 /* Release */,
+				4339E63C872245C380354056 /* MinSizeRel */,
+				F8A980F3466F439F9C6E96E0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7B776C1B68DB4EEAA158878D /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F537F762B1241B487ACB8A3 /* Debug */,
+				40D817D3F3F1460BA92FB591 /* Release */,
+				3ABDDA3E86FC45209B274ECB /* MinSizeRel */,
+				18738C1759794C4582556422 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8B75F1822419453194E213F5 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C44ABFD409E744D1AAF416C2 /* Debug */,
+				772EC3080C424C86A02DFEB5 /* Release */,
+				CCD0BD4798A4469C87003B4D /* MinSizeRel */,
+				98A7F21B9B0D4DE392D67B34 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A3F5F60228A41FA82291495 /* Project object */;
+}
