@@ -3,8 +3,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="ffmpegApp1" targetName="uninstall" />
-      <config projectName="ffmpegApp1" targetName="ffmpegApp1" />
       <config projectName="ffmpegApp1" targetName="glfw" />
+      <config projectName="ffmpegApp1" targetName="ffmpegApp1" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bcf363d3-93b4-4c2c-bd79-c44371e630af" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/FindFFmpeg.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/FindFFmpeg.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,10 +94,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.ffmpegApp1" />
       <item itemvalue="CMake Application.ffmpegApp1 official" />
-      <item itemvalue="CMake Application.uninstall" />
+      <item itemvalue="CMake Application.ffmpegApp1" />
       <item itemvalue="CMake Application.glfw" />
+      <item itemvalue="CMake Application.uninstall" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -114,6 +113,7 @@
       <workItem from="1587342543827" duration="4858000" />
       <workItem from="1587360566491" duration="9831000" />
       <workItem from="1587466791812" duration="2193000" />
+      <workItem from="1587518202346" duration="78000" />
     </task>
     <servers />
   </component>
@@ -145,9 +145,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1218" height="184" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1587353814794" />
-    <state x="320" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1587466853856">
+    <state x="320" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1587535221283">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="320" y="224" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1587466853856" />
+    <state x="320" y="224" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1587535221283" />
   </component>
 </project>
