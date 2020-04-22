@@ -42,11 +42,5 @@ target_link_libraries(
         ${PROJECT_NAME}
         glfw
         FFmpeg
-#        ${FFMPEG_LIBRARIES}
         ${EXTRA_LIBS}
 )
-
-#target_include_directories(
-#        ${PROJECT_NAME}
-#        PUBLIC ${FFMPEG_INCLUDE_DIR}
-#)

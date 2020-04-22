@@ -212,17 +212,19 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
 
     uint8_t* dest[4] = { data, NULL, NULL, NULL};
     int dest_linesize[4] =  { av_frame->width * 4, 0, 0, 0 };
-
     sws_scale(sws_scaler_ctx, av_frame->data, av_frame->linesize, 0, av_frame->height, dest, dest_linesize);
+    sws_freeContext(sws_scaler_ctx);
 
-
+    *width_out = av_frame->width;
+    *height_out = av_frame->height;
+    *data_out = data;
 
     //properly clean up the routine at the end, freeing up the context that is allocated
-    sws_freeContext(sws_scaler_ctx);
     av_frame_free(&av_frame);
     av_packet_free(&av_packet);
     avformat_close_input(&av_format_ctx); //closing the input file so the file does not remain open
     avformat_free_context(av_format_ctx);
     avcodec_free_context(&av_codec_ctx);
+
     return true;
 }
