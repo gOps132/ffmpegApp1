@@ -111,10 +111,7 @@ ffmpegApp1_EXTERNAL_OBJECTS =
 ffmpegApp1: CMakeFiles/ffmpegApp1.dir/src/main.cpp.o
 ffmpegApp1: CMakeFiles/ffmpegApp1.dir/src/load_frame.cpp.o
 ffmpegApp1: CMakeFiles/ffmpegApp1.dir/build.make
-ffmpegApp1: lib/glfw/src/libglfw3.a
-ffmpegApp1: /usr/local/lib/libavcodec.dylib
-ffmpegApp1: /usr/local/lib/libavformat.dylib
-ffmpegApp1: /usr/local/lib/libavutil.dylib
+ffmpegApp1: lib/glfw2/src/libglfw3.a
 ffmpegApp1: CMakeFiles/ffmpegApp1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ffmpegApp1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ffmpegApp1.dir/link.txt --verbose=$(VERBOSE)

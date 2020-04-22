@@ -13,8 +13,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeDependentOption.cmake"
-  "/Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
-  "/Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeFindCodeBlocks.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeGenericSystem.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake"
@@ -44,19 +42,18 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CMake.app/Contents/share/cmake-3.17/Modules/Platform/Darwin-Initialize.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.17/Modules/Platform/Darwin.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.17/Modules/Platform/UnixPaths.cmake"
-  "/Applications/CMake.app/Contents/share/cmake-3.17/Modules/ProcessorCount.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.17/Modules/WriteBasicConfigVersionFile.cmake"
   "../CMakeLists.txt"
   "CMakeFiles/3.17.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.17.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.17.0/CMakeSystem.cmake"
-  "../cmake/FindFFmpeg.cmake"
-  "../lib/glfw/CMake/cmake_uninstall.cmake.in"
-  "../lib/glfw/CMake/glfw3.pc.in"
-  "../lib/glfw/CMake/glfw3Config.cmake.in"
-  "../lib/glfw/CMakeLists.txt"
-  "../lib/glfw/src/CMakeLists.txt"
-  "../lib/glfw/src/glfw_config.h.in"
+  "../lib/FFmpeg/CMakeLists.txt"
+  "../lib/glfw2/CMake/cmake_uninstall.cmake.in"
+  "../lib/glfw2/CMake/glfw3.pc.in"
+  "../lib/glfw2/CMake/glfw3Config.cmake.in"
+  "../lib/glfw2/CMakeLists.txt"
+  "../lib/glfw2/src/CMakeLists.txt"
+  "../lib/glfw2/src/glfw_config.h.in"
   )
 
 # The corresponding makefile is:
@@ -68,13 +65,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "lib/glfw/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "lib/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/glfw2/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/glfw2/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/FFmpeg/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ffmpegApp1.dir/DependInfo.cmake"
-  "lib/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake"
-  "lib/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "lib/glfw2/CMakeFiles/uninstall.dir/DependInfo.cmake"
+  "lib/glfw2/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )

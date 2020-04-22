@@ -1,26 +1,33 @@
 //
 // Created by Gian Cedrick Epilan on 20/04/2020.
 //
+// will be continuing documenting the functions and each line of code later
+//
 
 #include "load_frame.h"
 #include <iostream>
 
 extern "C"
 {
+//    video stuff
     #include <libavcodec/avcodec.h>
+//    reading the video files and other data manipulation
     #include <libavformat/avformat.h>
+//    use uint
     #include <inttypes.h>
+//    using swscale for the color conversion and more
+    #include <libswscale/swscale.h>
 }
 
 bool load_frame(const char* filename, int* width_out, int* height_out, unsigned char** data_out)
 {
 
 //    open a file using libavformat
-        AVFormatContext* av_format_ctx = avformat_alloc_context();
-        if (!av_format_ctx) {
-            std::cout << "couldn't create avformat ctx" << std::endl;
-            return false;
-        }
+    AVFormatContext* av_format_ctx = avformat_alloc_context();
+    if (!av_format_ctx) {
+        std::cout << "couldn't create avformat ctx" << std::endl;
+        return false;
+    }
 
     if(avformat_open_input(&av_format_ctx, filename, NULL, NULL) !=0)
     {
@@ -33,6 +40,7 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
     AVCodecParameters* av_codec_params;
     AVCodec* av_codec;
 
+    //document this loop
     for (int i = 0; i < av_format_ctx->nb_streams; ++i)
     {
         av_codec_params = av_format_ctx->streams[i]->codecpar;
@@ -144,16 +152,17 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
         break;
     };
 
+//    at this point we have a AV_FRAME variable and that stores the raw data, that is decompressed from the codec
+//    and it will store it in YUV format
+
     //get the data from the av_frame and put it in some rectangle
     //allocate some data
     //making RGB data
-    unsigned char* data = new unsigned char[av_frame->width * av_frame->height * 3];
-    av_frame->data;
-
+//    unsigned char* data = new unsigned char[av_frame->width * av_frame->height * 3];
     //? converting and returning YUV to RGB
-    for (int x = 0; x < av_frame->width; ++x)
-    {
-//        returning RGB
+//    for (int x = 0; x < av_frame->width; ++x)
+//    {
+//        returning RGB (red block)
 //        for (int y = 0; y < av_frame->height; ++y)
 //        {
 //            //filling in the data
@@ -163,26 +172,59 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
 //            the "data" does not have any actual data, it's stil a red block but it still have the dimensions of the frame
 //        }
 
-        for (int y = 0; y < av_frame->height; ++y)
-        {
-            //filling in the data
-            //returning gray scale pixel data
-            data[y * av_frame->width * 3 + x * 3    ] = av_frame->data[0][y * av_frame->linesize[0] + x];
-            data[y * av_frame->width * 3 + x * 3 + 1] = av_frame->data[0][y * av_frame->linesize[0] + x];
-            data[y * av_frame->width * 3 + x * 3 + 2] = av_frame->data[0][y * av_frame->linesize[0] + x];
-//            the "data" does not have any actual data, it's stil a red block but it still have the dimensions of the frame
-        }
+//        convert raw YUV data format from frame to RGB
+//        for (int y = 0; y < av_frame->height; ++y)
+//        {
+//            //filling in the data
+//            //returning gray scale pixel data
+//            data[y * av_frame->width * 3 + x * 3    ] = av_frame->data[0][y * av_frame->linesize[0] + x];
+//            data[y * av_frame->width * 3 + x * 3 + 1] = av_frame->data[0][y * av_frame->linesize[0] + x];
+//            data[y * av_frame->width * 3 + x * 3 + 2] = av_frame->data[0][y * av_frame->linesize[0] + x];
+//        }
+//    }
+//    *width_out = av_frame->width;
+//    *height_out = av_frame->height;
+//    *data_out = data;
+
+// allocate the buffer, 4 bytes for everypixel
+    uint8_t* data = new uint8_t[av_frame->width * av_frame->height * 4];
+
+//create a swscalar context, which is all the data that the data that the scalar needs to be converting color spaces
+//    or converting sizes  of the image
+    SwsContext* sws_scaler_ctx = sws_getContext(
+            av_frame->width,
+            av_frame->height,
+            av_codec_ctx->pix_fmt,
+            av_frame->width,
+            av_frame->height,
+            AV_PIX_FMT_RGB0,
+            SWS_BILINEAR,
+            NULL,
+            NULL,
+            NULL
+            );
+
+    if (!sws_scaler_ctx)
+    {
+        std::cout << "Couldn't initialize sws_scaler" << std::endl;
+        return false;
     }
-    
+
+    uint8_t* dest[4] = { data, NULL, NULL, NULL};
+    int dest_linesize[4] =  { av_frame->width * 4, 0, 0, 0 };
+    sws_scale(sws_scaler_ctx, av_frame->data, av_frame->linesize, 0, av_frame->height, dest, dest_linesize);
+    sws_freeContext(sws_scaler_ctx);
+
     *width_out = av_frame->width;
     *height_out = av_frame->height;
     *data_out = data;
-    
+
     //properly clean up the routine at the end, freeing up the context that is allocated
     av_frame_free(&av_frame);
     av_packet_free(&av_packet);
     avformat_close_input(&av_format_ctx); //closing the input file so the file does not remain open
     avformat_free_context(av_format_ctx);
     avcodec_free_context(&av_codec_ctx);
+
     return true;
 }

@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++14 -g -isysroot /Applications/Xcode.app/Contents/Developer/
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include -I"/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw/include" 
+CXX_INCLUDES = -I"/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2/include" -isystem /usr/local/Cellar/ffmpeg/4.2.2_2/include 
 
