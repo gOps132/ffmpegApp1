@@ -13,14 +13,15 @@ set(SOURCE_FILES
 )
 
 #tells CmakeLists.txt where to look for cmake files
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
+#list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
 
 #produce the executable
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
-find_package(FFmpeg REQUIRED)
+#find_package(FFmpeg REQUIRED)
 
-add_subdirectory(lib/glfw)
+add_subdirectory(lib/glfw2)
+add_subdirectory(lib/FFmpeg)
 
 if (APPLE)
     list (APPEND EXTRA_LIBS
@@ -40,11 +41,12 @@ endif()
 target_link_libraries(
         ${PROJECT_NAME}
         glfw
-        ${FFMPEG_LIBRARIES}
+        FFmpeg
+#        ${FFMPEG_LIBRARIES}
         ${EXTRA_LIBS}
 )
 
-target_include_directories(
-        ${PROJECT_NAME}
-        PUBLIC ${FFMPEG_INCLUDE_DIR}
-)
+#target_include_directories(
+#        ${PROJECT_NAME}
+#        PUBLIC ${FFMPEG_INCLUDE_DIR}
+#)

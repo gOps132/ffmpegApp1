@@ -30,7 +30,7 @@ CMakeFiles/ffmpegApp1.dir/src/load_frame.cpp.o: /usr/local/Cellar/ffmpeg/4.2.2_2
 CMakeFiles/ffmpegApp1.dir/src/load_frame.cpp.o: /usr/local/Cellar/ffmpeg/4.2.2_2/include/libavutil/version.h
 CMakeFiles/ffmpegApp1.dir/src/load_frame.cpp.o: /usr/local/Cellar/ffmpeg/4.2.2_2/include/libswscale/swscale.h
 
-CMakeFiles/ffmpegApp1.dir/src/main.cpp.o: ../lib/glfw/include/GLFW/glfw3.h
+CMakeFiles/ffmpegApp1.dir/src/main.cpp.o: ../lib/glfw2/include/GLFW/glfw3.h
 CMakeFiles/ffmpegApp1.dir/src/main.cpp.o: ../src/load_frame.h
 CMakeFiles/ffmpegApp1.dir/src/main.cpp.o: ../src/main.cpp
 

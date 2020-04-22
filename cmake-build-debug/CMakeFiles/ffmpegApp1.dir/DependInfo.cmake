@@ -11,13 +11,13 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../lib/glfw/include"
+  "../lib/glfw2/include"
   "/usr/local/Cellar/ffmpeg/4.2.2_2/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

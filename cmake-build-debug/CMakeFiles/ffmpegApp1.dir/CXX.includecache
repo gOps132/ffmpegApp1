@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../lib/glfw/include/GLFW/glfw3.h
+../lib/glfw2/include/GLFW/glfw3.h
 stddef.h
 -
 stdint.h

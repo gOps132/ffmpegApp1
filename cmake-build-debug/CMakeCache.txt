@@ -286,7 +286,7 @@ FFmpeg_BINARY_DIR:STATIC=/Users/giancedrickepilan/Documents/programmingProjects/
 FFmpeg_SOURCE_DIR:STATIC=/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/FFmpeg
 
 //Value Computed by CMake
-GLFW_BINARY_DIR:STATIC=/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw
+GLFW_BINARY_DIR:STATIC=/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/cmake-build-debug/lib/glfw2
 
 //Build the GLFW documentation
 GLFW_BUILD_DOCS:BOOL=ON
@@ -301,7 +301,7 @@ GLFW_BUILD_TESTS:BOOL=OFF
 GLFW_INSTALL:BOOL=ON
 
 //Value Computed by CMake
-GLFW_SOURCE_DIR:STATIC=/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw
+GLFW_SOURCE_DIR:STATIC=/Users/giancedrickepilan/Documents/programmingProjects/real projects/ffmpegApp1/lib/glfw2
 
 //Use OSMesa for offscreen context creation
 GLFW_USE_OSMESA:BOOL=OFF
