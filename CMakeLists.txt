@@ -9,7 +9,9 @@ set(SOURCE_FILES
 
     src/main.cpp
     src/load_frame.cpp
-        src/load_frame.h
+        src/load_frame.hpp
+    src/VideoReader.cpp
+        src/VideoReader.hpp
 )
 
 #ignore opengl deprecation warnings

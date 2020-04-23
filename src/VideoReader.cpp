@@ -1,53 +1,53 @@
 //
-// Created by Gian Cedrick Epilan on 20/04/2020.
-//
-// will be continuing documenting the functions and each line of code later
+// Created by Gian Cedrick Epilan on 22/04/2020.
 //
 
-#include "load_frame.hpp"
+#include "VideoReader.hpp"
 #include <iostream>
 
-extern "C"{
-//    video stuff
-    #include <libavcodec/avcodec.h>
-//    reading the video files and other data manipulation
-    #include <libavformat/avformat.h>
-//    use uint
-    #include <inttypes.h>
-//    using swscale for the color conversion and more
-    #include <libswscale/swscale.h>
-}
+bool video_reader_open(VideoReaderState* state, const char* filename){
 
-bool load_frame(const char* filename, int* width_out, int* height_out, unsigned char** data_out){
-
+    //unpack members of state
+    auto& width = state->width;
+    auto& height = state->height;
+    auto& av_format_ctx = state->av_format_ctx;
+    auto& av_codec_ctx = state->av_codec_ctx;
+    auto& video_stream_index = state->video_stream_index;
+    auto& av_frame = state->av_frame;
+    auto& av_packet = state->av_packet;
 
 //    open a file using libavformat
-    AVFormatContext* av_format_ctx = avformat_alloc_context();
+    av_format_ctx = avformat_alloc_context();
     if (!av_format_ctx) {
         std::cout << "couldn't create avformat ctx" << std::endl;
         return false;
     }
 
-    if(avformat_open_input(&av_format_ctx, filename, NULL, NULL) !=0){
+    if(avformat_open_input(&av_format_ctx, filename, NULL, NULL) !=0)
+    {
         std::cout << "couldn't open video file" << std::endl;
         return false;
     };
 
     //find the first valid video stream inside the file
-    int video_stream_index = -1;
+    video_stream_index = -1;
     AVCodecParameters* av_codec_params;
     AVCodec* av_codec;
 
-    //document this loop
-    for (int i = 0; i < av_format_ctx->nb_streams; ++i){
+    for (int i = 0; i < av_format_ctx->nb_streams; ++i)
+    {
         av_codec_params = av_format_ctx->streams[i]->codecpar;
         av_codec = avcodec_find_decoder(av_codec_params->codec_id);
 
-        if (!av_codec){
+        if (!av_codec)
+        {
             continue;
         }
 
-        if (av_codec_params->codec_type == AVMEDIA_TYPE_VIDEO){
+        if (av_codec_params->codec_type == AVMEDIA_TYPE_VIDEO)
+        {
+            width = av_codec_params->width;
+            height = av_codec_params->height;
             video_stream_index = i;
             break;
         }
@@ -61,7 +61,8 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
 
     }
 
-    if (video_stream_index == -1){
+    if (video_stream_index == -1)
+    {
         std::cout << "couldn't find valid stream inside video file" << std::endl;
         return false;
     }
@@ -80,34 +81,56 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
 //    }
 
     //setup codec context fro the decoder
-    AVCodecContext* av_codec_ctx = avcodec_alloc_context3(av_codec);
-    if (!av_codec_ctx){
+    av_codec_ctx = avcodec_alloc_context3(av_codec);
+    if (!av_codec_ctx)
+    {
         std::cout << "Couldn't create avcodec context" << std::endl;
         return false;
     }
 
-    if(avcodec_parameters_to_context(av_codec_ctx, av_codec_params) < 0){
+    if(avcodec_parameters_to_context(av_codec_ctx, av_codec_params) < 0)
+    {
         std::cout << "couldn't initialize AVCodecContext" << std::endl;
         return false;
     }
 
     //open the codec fle and start reading from it
-    if(avcodec_open2(av_codec_ctx, av_codec, NULL) < 0){
+    if(avcodec_open2(av_codec_ctx, av_codec, NULL) < 0)
+    {
         std::cout << "Couldn't open codec" << std::endl;
         return false;
     }
     //create a packet
-    AVFrame* av_frame = av_frame_alloc();
-    if (!av_frame){
+    av_frame = av_frame_alloc();
+    if (!av_frame)
+    {
         std::cout << "couldn't allocate AVFrame" << std::endl;
+        return false;
     }
-    AVPacket* av_packet = av_packet_alloc();
-    if (!av_packet){
+    av_packet = av_packet_alloc();
+    if (!av_packet)
+    {
         std::cout << "couldn't allocate AVPacket" << std::endl;
+        return false;
     }
+
+        return true;
+}
+
+
+bool video_reader_read_frame(VideoReaderState* state, uint8_t* frame_buffer){
+
+    //unpack members of state
+    auto& width = state->width;
+    auto& height = state->height;
+    auto& av_format_ctx = state->av_format_ctx;
+    auto& av_codec_ctx = state->av_codec_ctx;
+    auto& video_stream_index = state->video_stream_index;
+    auto& av_frame = state->av_frame;
+    auto& av_packet = state->av_packet;
+    auto& sws_scaler_ctx = state->sws_scaler_ctx;
 
     int response;
-
     //weird the function says av_read_frame but it actually is reading a packet
     while (av_read_frame(av_format_ctx, av_packet) >= 0){
         //waiting until you get a packet for the video stream
@@ -134,7 +157,21 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
         //dummy statement
         av_packet_unref(av_packet);
         break;
-    };
+    }
+
+    if (!sws_scaler_ctx) {
+    //create a swscalar context, which is all the data that the data that the scalar needs to be converting color spaces
+    //  or converting sizes  of the image
+    // setup sws_scaler to properly convert video data
+    sws_scaler_ctx = sws_getContext(width, height, av_codec_ctx->pix_fmt,
+                                    width, height, AV_PIX_FMT_RGB0, SWS_BILINEAR,
+                                    NULL, NULL, NULL );
+    }
+
+    if (!sws_scaler_ctx){
+        std::cout << "Couldn't initialize sws_scaler" << std::endl;
+        return false;
+    }
 
 //    at this point we have a AV_FRAME variable and that stores the raw data, that is decompressed from the codec
 //    and it will store it in YUV format
@@ -170,44 +207,26 @@ bool load_frame(const char* filename, int* width_out, int* height_out, unsigned 
 //    *height_out = av_frame->height;
 //    *data_out = data;
 
-// allocate the buffer, 4 bytes for everypixel
-    uint8_t* data = new uint8_t[av_frame->width * av_frame->height * 4];
+    // allocate the buffer, 4 bytes for everypixel
+    // uint8_t* data = new uint8_t[av_frame->width * av_frame->height * 4];
 
-//create a swscalar context, which is all the data that the data that the scalar needs to be converting color spaces
-//    or converting sizes  of the image
-    SwsContext* sws_scaler_ctx = sws_getContext(
-            av_frame->width,
-            av_frame->height,
-            av_codec_ctx->pix_fmt,
-            av_frame->width,
-            av_frame->height,
-            AV_PIX_FMT_RGB0,
-            SWS_BILINEAR,
-            NULL,
-            NULL,
-            NULL
-            );
-
-    if (!sws_scaler_ctx){
-        std::cout << "Couldn't initialize sws_scaler" << std::endl;
-        return false;
-    }
-
-    uint8_t* dest[4] = { data, NULL, NULL, NULL};
-    int dest_linesize[4] =  { av_frame->width * 4, 0, 0, 0 };
+    uint8_t* dest[4] = { frame_buffer, NULL, NULL, NULL};
+    int dest_linesize[4] =  { width * 4, 0, 0, 0 };
     sws_scale(sws_scaler_ctx, av_frame->data, av_frame->linesize, 0, av_frame->height, dest, dest_linesize);
-    sws_freeContext(sws_scaler_ctx);
 
-    *width_out = av_frame->width;
-    *height_out = av_frame->height;
-    *data_out = data;
-
-    //properly clean up the routine at the end, freeing up the context that is allocated
-    av_frame_free(&av_frame);
-    av_packet_free(&av_packet);
-    avformat_close_input(&av_format_ctx); //closing the input file so the file does not remain open
-    avformat_free_context(av_format_ctx);
-    avcodec_free_context(&av_codec_ctx);
+    // *width_out = av_frame->width;
+    // *height_out = av_frame->height;
+    // *data_out = data;
 
     return true;
+}
+
+bool video_reader_close(VideoReaderState* state){
+    //properly clean up the routine at the end, freeing up the context that is allocated
+    sws_freeContext(state->sws_scaler_ctx);
+    av_frame_free(&state->av_frame);
+    av_packet_free(&state->av_packet);
+    avformat_close_input(&state->av_format_ctx); //closing the input file so the file does not remain open
+    avformat_free_context(state->av_format_ctx);
+    avcodec_free_context(&state->av_codec_ctx);
 }
