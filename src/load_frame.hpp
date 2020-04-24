@@ -8,3 +8,6 @@
 bool load_frame(const char* filename, int* width, int* height, unsigned char** data);
 
 #endif //FFMPEGAPP1_LOAD_FRAME_H
+
+// load frame is boolean function that returns converted pixel data from
+// one frame of input video

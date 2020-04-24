@@ -52,11 +52,6 @@ bool video_reader_open(VideoReaderState* state, const char* filename){
             break;
         }
 
-//        if (av_codec->codec_type === AVMEDIA_TYPE_AUDIO)
-//        {
-//
-//        }
-
         auto stream = av_format_ctx->streams[i];
 
     }
@@ -66,19 +61,6 @@ bool video_reader_open(VideoReaderState* state, const char* filename){
         std::cout << "couldn't find valid stream inside video file" << std::endl;
         return false;
     }
-
-//    sample "video frame" returns a buffer of red pixels
-//    *width = 100;
-//    *height = 100;
-//    *data = new unsigned char[100 * 100 * 3];
-//    auto ptr = *data;
-//    for (int x = 0; x < 100; ++x) {
-//        for (int y = 0; y < 100; ++y) {
-//            *ptr++ = 0xff;
-//            *ptr++ = 0x00;
-//            *ptr++ = 0x00;
-//        }
-//    }
 
     //setup codec context fro the decoder
     av_codec_ctx = avcodec_alloc_context3(av_codec);
@@ -131,15 +113,15 @@ bool video_reader_read_frame(VideoReaderState* state, uint8_t* frame_buffer){
     auto& sws_scaler_ctx = state->sws_scaler_ctx;
 
     int response;
-    //weird the function says av_read_frame but it actually is reading a packet
+    //the function says av_read_frame but it actually is reading a packet
     while (av_read_frame(av_format_ctx, av_packet) >= 0){
         //waiting until you get a packet for the video stream
         if(av_packet->stream_index != video_stream_index){
             continue;
         }
         response = avcodec_send_packet(av_codec_ctx, av_packet);
-        //weird, I am just following and understanding the code but if "response" is just
-//      less than 0 why not just !response?
+        //I am just following and understanding the code but if "response" is just
+        //less than 0 why not just !response?
         if (response < 0){
             std::cout << "Failed to decode packet" << av_err2str(response) <<std::endl;
             return false;
@@ -159,67 +141,24 @@ bool video_reader_read_frame(VideoReaderState* state, uint8_t* frame_buffer){
         break;
     }
 
+    // setup sws scaler to convert the pixel data from the internal format of the video file
+    // to RGB0 so we can put it into openGLq
     if (!sws_scaler_ctx) {
-    //create a swscalar context, which is all the data that the data that the scalar needs to be converting color spaces
-    //  or converting sizes  of the image
-    // setup sws_scaler to properly convert video data
     sws_scaler_ctx = sws_getContext(width, height, av_codec_ctx->pix_fmt,
-                                    width, height, AV_PIX_FMT_RGB0, SWS_BILINEAR,
+                                    width / 2, height / 2, AV_PIX_FMT_RGB0, SWS_BILINEAR,
                                     NULL, NULL, NULL );
     }
-
     if (!sws_scaler_ctx){
         std::cout << "Couldn't initialize sws_scaler" << std::endl;
         return false;
     }
 
-//    at this point we have a AV_FRAME variable and that stores the raw data, that is decompressed from the codec
-//    and it will store it in YUV format
-
-    //get the data from the av_frame and put it in some rectangle
-    //allocate some data
-    //making RGB data
-//    unsigned char* data = new unsigned char[av_frame->width * av_frame->height * 3];
-    //? converting and returning YUV to RGB
-//    for (int x = 0; x < av_frame->width; ++x)
-//    {
-//        returning RGB (red block)
-//        for (int y = 0; y < av_frame->height; ++y)
-//        {
-//            //filling in the data
-//            data[y * av_frame->width * 3 + x * 3] = 0xff;   //RED
-//            data[y * av_frame->width * 3 + x * 3 + 1] = 0x00;   //BLUE
-//            data[y * av_frame->width * 3 + x * 3 + 2] = 0x00;   //GREEN
-//            the "data" does not have any actual data, it's stil a red block but it still have the dimensions of the frame
-//        }
-
-//        convert raw YUV data format from frame to RGB
-//        for (int y = 0; y < av_frame->height; ++y)
-//        {
-//            //filling in the data
-//            //returning gray scale pixel data
-//            data[y * av_frame->width * 3 + x * 3    ] = av_frame->data[0][y * av_frame->linesize[0] + x];
-//            data[y * av_frame->width * 3 + x * 3 + 1] = av_frame->data[0][y * av_frame->linesize[0] + x];
-//            data[y * av_frame->width * 3 + x * 3 + 2] = av_frame->data[0][y * av_frame->linesize[0] + x];
-//        }
-//    }
-//    *width_out = av_frame->width;
-//    *height_out = av_frame->height;
-//    *data_out = data;
-
-    // allocate the buffer, 4 bytes for everypixel
-    // uint8_t* data = new uint8_t[av_frame->width * av_frame->height * 4];
-
     uint8_t* dest[4] = { frame_buffer, NULL, NULL, NULL};
     int dest_linesize[4] =  { width * 4, 0, 0, 0 };
     sws_scale(sws_scaler_ctx, av_frame->data, av_frame->linesize, 0, av_frame->height, dest, dest_linesize);
 
-    // *width_out = av_frame->width;
-    // *height_out = av_frame->height;
-    // *data_out = data;
-
     return true;
-}
+} 
 
 bool video_reader_close(VideoReaderState* state){
     //properly clean up the routine at the end, freeing up the context that is allocated
