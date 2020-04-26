@@ -8,8 +8,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 set(SOURCE_FILES
 
     src/main.cpp
-    src/load_frame.cpp
-        src/load_frame.hpp
     src/VideoReader.cpp
         src/VideoReader.hpp
 )
@@ -17,15 +15,10 @@ set(SOURCE_FILES
 #ignore opengl deprecation warnings
 add_definitions(-DGL_SILENCE_DEPRECATION)
 
-#tells CmakeLists.txt where to look for cmake files
-#list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
-
 #produce the executable
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
-#find_package(FFmpeg REQUIRED)
-
-add_subdirectory(lib/glfw2)
+add_subdirectory(lib/glfw)
 add_subdirectory(lib/FFmpeg)
 
 if (APPLE)
