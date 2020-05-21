@@ -4,8 +4,13 @@
 
 #include "VideoReader.hpp"
 #include <iostream>
+extern "C" {
+    #include <libavdevice/avdevice.h> 
+}
 
 bool video_reader_open(VideoReaderState* state, const char* filename){
+
+    avdevice_register_all();
 
     //unpack members of state
     auto& width = state->width;
@@ -23,7 +28,17 @@ bool video_reader_open(VideoReaderState* state, const char* filename){
         return false;
     }
 
-    if(avformat_open_input(&av_format_ctx, filename, NULL, NULL) !=0)
+    AVInputFormat* av_input_format = NULL;
+    do
+    {
+        av_input_audio_device_next(av_input_format);
+    } while (av_input_format != NULL && strcmp(av_input_format->name, "avfoundatio") != 0);
+    
+    if (av_input_format = NULL)
+    {
+        std::cout << "couldn't find AV foundation input format to get webcam" << std::endl;
+    }
+    if(avformat_open_input(&av_format_ctx, "default:none", av_input_format, NULL) !=0)
     {
         std::cout << "couldn't open video file" << std::endl;
         return false;

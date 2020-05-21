@@ -24,7 +24,7 @@ int main(int argc, const char* argv[]){
     if (!video_reader_open(&vr_state, "/Users/giancedrickepilan/Desktop/sample.mp4")){
         std::cout << "couldn't open file" << std::endl;
         return 1;
-    }
+    }   
 
     glfwMakeContextCurrent(window);
 
