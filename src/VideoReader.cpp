@@ -28,21 +28,25 @@ bool video_reader_open(VideoReaderState* state, const char* filename){
         return false;
     }
 
-    AVInputFormat* av_input_format = NULL;
-    do
-    {
-        av_input_audio_device_next(av_input_format);
-    } while (av_input_format != NULL && strcmp(av_input_format->name, "avfoundatio") != 0);
-    
-    if (av_input_format = NULL)
-    {
-        std::cout << "couldn't find AV foundation input format to get webcam" << std::endl;
-    }
-    if(avformat_open_input(&av_format_ctx, "default:none", av_input_format, NULL) !=0)
-    {
-        std::cout << "couldn't open video file" << std::endl;
+    if (!av_format_ctx) {
+        printf("Couldn't created AVFormatContext\n");
         return false;
-    };
+    }
+
+    AVInputFormat* av_input_format = av_find_input_format("avfoundation");
+    if (!av_input_format) {
+        printf("Couldn't find AVFoundation input format to get webcam\n");
+        return false;
+    }
+
+    AVDictionary* options = NULL;
+    av_dict_set(&options, "framerate", "25", 0);
+    av_dict_set(&options, "pix_fmt", "rgb0", 0);
+
+    if (avformat_open_input(&av_format_ctx, "0:none", av_input_format, &options) != 0) {
+        printf("Couldn't open video file\n");
+        return false;
+    }
 
     //find the first valid video stream inside the file
     video_stream_index = -1;
