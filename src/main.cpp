@@ -21,7 +21,7 @@ int main(int argc, const char* argv[]){
     //initialize video reader to open a file
     //opening frame
     VideoReaderState vr_state;
-    if (!video_reader_open(&vr_state, "/Users/giancedrickepilan/Desktop/sample.mp4")){
+    if (!video_reader_open(&vr_state, "/Users/giancedrickepilan/Movies/stock footage/number4.mp4")){
         std::cout << "couldn't open file" << std::endl;
         return 1;
     }
