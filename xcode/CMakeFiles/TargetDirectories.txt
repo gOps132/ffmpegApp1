@@ -1,0 +1,13 @@
+/Users/giancedrickepilan/dev/native/ffmpegApp1/xcode/CMakeFiles/install.dir
+/Users/giancedrickepilan/dev/native/ffmpegApp1/xcode/CMakeFiles/ffmpegApp1.dir
+/Users/giancedrickepilan/dev/native/ffmpegApp1/xcode/CMakeFiles/ALL_BUILD.dir
+/Users/giancedrickepilan/dev/native/ffmpegApp1/xcode/CMakeFiles/ZERO_CHECK.dir
+/Users/giancedrickepilan/dev/native/ffmpegApp1/xcode/lib/glfw/CMakeFiles/install.dir
+/Users/giancedrickepilan/dev/native/ffmpegApp1/xcode/lib/glfw/CMakeFiles/uninstall.dir
+/Users/giancedrickepilan/dev/native/ffmpegApp1/xcode/lib/glfw/CMakeFiles/ALL_BUILD.dir
+/Users/giancedrickepilan/dev/native/ffmpegApp1/xcode/lib/glfw/CMakeFiles/ZERO_CHECK.dir
+/Users/giancedrickepilan/dev/native/ffmpegApp1/xcode/lib/glfw/src/CMakeFiles/install.dir
+/Users/giancedrickepilan/dev/native/ffmpegApp1/xcode/lib/glfw/src/CMakeFiles/glfw.dir
+/Users/giancedrickepilan/dev/native/ffmpegApp1/xcode/lib/FFmpeg/CMakeFiles/install.dir
+/Users/giancedrickepilan/dev/native/ffmpegApp1/xcode/lib/FFmpeg/CMakeFiles/ALL_BUILD.dir
+/Users/giancedrickepilan/dev/native/ffmpegApp1/xcode/lib/FFmpeg/CMakeFiles/ZERO_CHECK.dir
