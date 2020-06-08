@@ -3,11 +3,13 @@
 #include "VideoReader.hpp"
 
 
-int main(int argc, const char* argv[]){
+int main(int argc, const char* argv[])
+{
     GLFWwindow* window;
 
     // initialize glfw to create a window
-    if (!glfwInit()){
+    if (!glfwInit())
+    {
         std::cout << "couldnt intialize" << std::endl;
         return 1;
     }
@@ -21,7 +23,8 @@ int main(int argc, const char* argv[]){
     //initialize video reader to open a file
     //opening frame
     VideoReaderState vr_state;
-    if (!video_reader_open(&vr_state, "/Users/giancedrickepilan/Movies/stock footage/number4.mp4")){
+    if (!video_reader_open(&vr_state, "/Users/giancedrickepilan/Movies/stock footage/number4.mp4"))
+    {
         std::cout << "couldn't open file" << std::endl;
         return 1;
     }
@@ -58,16 +61,28 @@ int main(int argc, const char* argv[]){
         glMatrixMode(GL_MODELVIEW);
 
         //read a new frame and load it into texture
-
-
-        // asks video reader to read one frame
-        if (!video_reader_read_frame(&vr_state, frame_data)){
-        std::cout << "couldn't load video frame" << std::endl;
-        return 1;
+        int64_t pts;
+        if (!video_reader_read_frame(&vr_state, frame_data))
+        {
+            std::cout << "couldn't load video frame" << std::endl;
+            return 1;
         }
+
+        static bool first_frame = true;
+        if (first_frame) 
+        {
+            glfwSetTime(0.0);
+            first_frame = false;
+        }
+        
+        std::cout << pts << std::endl;
+        double pt_in_seconds = pts * (double)vr_state.time_base.den / (double)vr_state.time_base.num;
+        while (pt_in_seconds > glfwGetTime()) {
+            glfwWaitEventsTimeout(pt_in_seconds - glfwGetTime());
+        }
+        
         glBindTexture(GL_TEXTURE_2D, tex_handle);
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, frame_width, frame_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, frame_data);
-
 
         //Render whatever you want
         glEnable(GL_TEXTURE_2D);

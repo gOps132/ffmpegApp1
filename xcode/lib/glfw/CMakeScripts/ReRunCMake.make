@@ -9,7 +9,6 @@ TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/CMake.app/Cont
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeDependentOption.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakePackageConfigHelpers.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/CMake.app/Contents/share/cmake-3.17/Modules/CheckCSourceCompiles.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/CMake.app/Contents/share/cmake-3.17/Modules/CheckIncludeFile.c.in))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/CMake.app/Contents/share/cmake-3.17/Modules/CheckIncludeFile.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/CMake.app/Contents/share/cmake-3.17/Modules/CheckLibraryExists.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/CMake.app/Contents/share/cmake-3.17/Modules/FindDoxygen.cmake))
