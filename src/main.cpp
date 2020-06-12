@@ -1,37 +1,30 @@
-#include <iostream>
+#include <stdio.h>
 #include <GLFW/glfw3.h>
 #include "VideoReader.hpp"
 
-
-int main(int argc, const char* argv[])
-{
+int main(int argc, const char** argv) {
     GLFWwindow* window;
 
-    // initialize glfw to create a window
-    if (!glfwInit())
-    {
-        std::cout << "couldnt intialize" << std::endl;
+    if (!glfwInit()) {
+        printf("Couldn't init GLFW\n");
         return 1;
     }
 
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
-    if (!window){
-        std::cout << "Couldn't open the window" << std::endl;
+    window = glfwCreateWindow(800, 480, "FFmpegApp1", NULL, NULL);
+    if (!window) {
+        printf("Couldn't open window\n");
         return 1;
     }
 
-    //initialize video reader to open a file
-    //opening frame
     VideoReaderState vr_state;
-    if (!video_reader_open(&vr_state, "/Users/giancedrickepilan/Movies/stock footage/number4.mp4"))
-    {
-        std::cout << "couldn't open file" << std::endl;
+    if (!video_reader_open(&vr_state, "/Users/giancedrickepilan/Desktop/100c.webm")) {
+        printf("Couldn't open video file\n");
         return 1;
     }
 
     glfwMakeContextCurrent(window);
 
-    //Generating texture
+    // Generate texture
     GLuint tex_handle;
     glGenTextures(1, &tex_handle);
     glBindTexture(GL_TEXTURE_2D, tex_handle);
@@ -45,63 +38,77 @@ int main(int argc, const char* argv[])
     // Allocate frame buffer
     const int frame_width = vr_state.width;
     const int frame_height = vr_state.height;
-    uint8_t* frame_data = new uint8_t[frame_width * frame_height * 4]; 
+    uint8_t* frame_data = new uint8_t[frame_width * frame_height * 4];
 
-    //run loop
-    while(!glfwWindowShouldClose(window)){
-        //inside here you can do ur renders
+    while (!glfwWindowShouldClose(window)) {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        //setup orthographic projection
+        // Set up orphographic projection
         int window_width, window_height;
         glfwGetFramebufferSize(window, &window_width, &window_height);
         glMatrixMode(GL_PROJECTION);
         glLoadIdentity();
-        glOrtho(0, window_width, window_height, 0, -1, 1);
+        glOrtho(10, window_width * 2 , window_height * 2, 0, -1, 1);
         glMatrixMode(GL_MODELVIEW);
-
-        //read a new frame and load it into texture
+        // Read a new frame and load it into texture
         int64_t pts;
-        if (!video_reader_read_frame(&vr_state, frame_data))
-        {
-            std::cout << "couldn't load video frame" << std::endl;
+        if (!video_reader_read_frame(&vr_state, frame_data, &pts)) {
+            printf("Couldn't load video frame\n");
             return 1;
         }
 
         static bool first_frame = true;
-        if (first_frame) 
-        {
+        if (first_frame) {
             glfwSetTime(0.0);
             first_frame = false;
         }
-        
-        std::cout << pts << std::endl;
-        double pt_in_seconds = pts * (double)vr_state.time_base.den / (double)vr_state.time_base.num;
+
+        printf("pt_in_seconds: %d\n", pts);
+        double pt_in_seconds = pts * (double)vr_state.time_base.num / (double)vr_state.time_base.den;
         while (pt_in_seconds > glfwGetTime()) {
             glfwWaitEventsTimeout(pt_in_seconds - glfwGetTime());
         }
-        
+
+        // Skip at 5s to 15s
+        static bool skipped_1 = false;
+        if (pt_in_seconds > 5.0 && !skipped_1) {
+            skipped_1 = true;
+            glfwSetTime(15.0);
+            pt_in_seconds = 15.0;
+            pts = (int64_t)(pt_in_seconds * (double)vr_state.time_base.den / (double)vr_state.time_base.num);
+            video_reader_seek_frame(&vr_state, pts);
+        }
+
+        // Skip at 20s to 6s
+        static bool skipped_2 = false;
+        if (pt_in_seconds > 20.0 && !skipped_2) {
+            skipped_2 = true;
+            glfwSetTime(6.0);
+            pt_in_seconds = 6; // sometimes using arbitrary numbers is good for performance but not flexibility
+            pts = (int64_t)(pt_in_seconds * (double)vr_state.time_base.den / (double)vr_state.time_base.num);
+            video_reader_seek_frame(&vr_state, pts);
+        }
+
         glBindTexture(GL_TEXTURE_2D, tex_handle);
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, frame_width, frame_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, frame_data);
 
-        //Render whatever you want
+        // Render whatever you want
         glEnable(GL_TEXTURE_2D);
         glBindTexture(GL_TEXTURE_2D, tex_handle);
         glBegin(GL_QUADS);
-            glTexCoord2d(0,0); glVertex2i(200,200);  
-            glTexCoord2d(1,0); glVertex2i(200 + frame_width , 200 );
-            glTexCoord2d(1,1); glVertex2i(200 + frame_width , 200 + frame_height);
-            glTexCoord2d(0,1); glVertex2i(200 , 200 + frame_height);
+            glTexCoord2d(0,0); glVertex2i(200, 200);
+            glTexCoord2d(1,0); glVertex2i(200 + frame_width, 200);
+            glTexCoord2d(1,1); glVertex2i(200 + frame_width, 200 + frame_height);
+            glTexCoord2d(0,1); glVertex2i(200, 200 + frame_height);
         glEnd();
         glDisable(GL_TEXTURE_2D);
 
         glfwSwapBuffers(window);
-
-        // glfwWaitEvents();
-        glfwPollEvents(); // do infinite loop
+        glfwPollEvents();
     }
-    
+
     video_reader_close(&vr_state);
 
     return 0;
-};
+}
+

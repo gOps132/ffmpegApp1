@@ -33,11 +33,11 @@ public:
 bool video_reader_open(VideoReaderState* state, const char* filename);
 
 /* Reads frame from packets, and reads back a frame buffer */
-bool video_reader_read_frame(VideoReaderState* state, uint8_t* frame_buffer);
+bool video_reader_read_frame(VideoReaderState* state, uint8_t* frame_buffer, int64_t* pts);
 
-// bool video_reader_seek_frame(VideoReaderState* state, );
+bool video_reader_seek_frame(VideoReaderState* state, int64_t ts);
 
 /* properly clean up the routine at the end, freeing up the context that is allocated */
-bool video_reader_close(VideoReaderState* state);
+void video_reader_close(VideoReaderState* state);
 
 #endif
